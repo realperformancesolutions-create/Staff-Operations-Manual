@@ -2,8 +2,9 @@
 // Design: Professional navy/red/white handbook with sticky sidebar navigation,
 // section-by-section layout, GRIP cards, penalty/bonus tables, step lists.
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { SECTIONS, ManualSection, ContentBlock } from "@/lib/manualData";
+import { downloadManualPdf } from "@/lib/downloadPdf";
 
 const LOGO_URL =
   "https://d2xsxph8kpxj0f.cloudfront.net/310519663270045816/N4rgkrRwWxtgy5x7UFcaiD/17960_2_f40ec5da.png";
@@ -206,8 +207,22 @@ function SectionContent({ section }: { section: ManualSection }) {
 export default function Home() {
   const [activeSection, setActiveSection] = useState("01");
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [downloading, setDownloading] = useState(false);
+  const [downloadProgress, setDownloadProgress] = useState(0);
   const sectionRefs = useRef<Record<string, HTMLDivElement | null>>({});
   const contentRef = useRef<HTMLDivElement>(null);
+
+  const handleDownloadPdf = useCallback(async () => {
+    if (downloading) return;
+    setDownloading(true);
+    setDownloadProgress(0);
+    try {
+      await downloadManualPdf((pct) => setDownloadProgress(pct));
+    } finally {
+      setDownloading(false);
+      setDownloadProgress(0);
+    }
+  }, [downloading]);
 
   // Scroll spy
   useEffect(() => {
@@ -282,11 +297,36 @@ export default function Home() {
               </>
             )}
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
             <span className="text-[oklch(0.48_0.22_25)] text-[11px] font-bold tracking-widest hidden sm:block"
               style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>
               #GETAGRIP
             </span>
+            <button
+              onClick={handleDownloadPdf}
+              disabled={downloading}
+              className="flex items-center gap-2 bg-[oklch(0.48_0.22_25)] hover:bg-[oklch(0.42_0.22_25)] disabled:opacity-60 text-white px-3 py-1.5 transition-colors duration-150"
+              style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif", fontSize: "11px", fontWeight: 700, letterSpacing: "0.1em" }}
+              title="Download PDF"
+            >
+              {downloading ? (
+                <>
+                  <svg className="animate-spin" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+                  </svg>
+                  <span className="hidden sm:inline">{downloadProgress > 0 ? `${downloadProgress}%` : "PREPARING..."}</span>
+                </>
+              ) : (
+                <>
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                  </svg>
+                  <span className="hidden sm:inline">DOWNLOAD PDF</span>
+                </>
+              )}
+            </button>
           </div>
         </div>
         {/* Red accent line */}
