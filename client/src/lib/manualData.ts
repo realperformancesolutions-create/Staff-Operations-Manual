@@ -103,7 +103,11 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "italic_intro",
-        text: "#GETAGRIP — Guidance. Resilience. Inspiration. Partnership. These are not just words on a wall. They are the operating principles that define how we coach, how we communicate, and how we carry ourselves every single day.",
+        text: "At Cheer Florida we live by the values of Guidance, Resilience, Integrity, and Partnership — our GRIP. We provide Guidance by creating a family-like environment where athletes are nurtured, supported, and encouraged to reach their full potential. We build Resilience by teaching athletes to face challenges with determination and tenacity, on and off the mat. Our community operates with Integrity, holding honesty, respect, and strong ethical values at the heart of everything we do. Finally, we foster Partnership through a supportive and inclusive culture, where teamwork, encouragement, and collaboration help every athlete, coach, and family member succeed together. This is GRIP — our promise to grow, support, inspire, and empower every member of our community.",
+      },
+      {
+        type: "body",
+        text: "#GETAGRIP",
       },
       {
         type: "body",
