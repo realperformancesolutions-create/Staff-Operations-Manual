@@ -278,12 +278,12 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "Every practice must be planned in advance. A written practice plan must be submitted to the Athletic Director before each practice session. Practice plans are not optional — they are a non-negotiable requirement of your coaching position.",
+        text: "Every practice must be planned in advance. A written practice plan must be submitted in the Team Band before each practice session. Practice plans are not optional — they are a non-negotiable requirement of your coaching position.",
       },
       {
         type: "bullet",
         items: [
-          "Practice plans must be submitted prior to the start of practice.",
+          "Practice plans must be posted in the Team Band prior to the start of practice.",
           "Plans must account for every minute of practice time — be specific with coaching goals and direct in your expectations.",
           "Practice plans must include all non-negotiable systems: H.I.I.T. warm-up, stretch system, tumbling drills, and jump system (minimum once per week).",
           "Scheduled practices are NOT to be used for choreography purposes. Routine changes must be done outside of normally scheduled practice time.",
@@ -292,7 +292,23 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "section_label",
-        text: "5.2  END OF DAY (EOD) REPORT",
+        text: "5.2  THE THREE PILLARS OF PRACTICE PLANNING",
+      },
+      {
+        type: "body",
+        text: "Every practice plan at Cheer Florida must be built on three core principles. These pillars define what a quality practice plan looks like and how it is executed.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "DETAILED PLAN: Every minute of practice must be accounted for. Be specific with your coaching goals and direct in your expectations. A plan that says 'work on stunts' is not a plan — a plan that says 'work on the load-in timing for the double-down sequence at count 32' is a plan.",
+          "COMMUNICATE: Efficiency comes from everyone having a clear understanding of the plan. This includes co-coaches, athletes, and parents. Plans posted to Band before practice provide documentation, transparency, and protection.",
+          "EXECUTE WITH FLEXIBILITY: The environment can change unexpectedly — unforeseen tardiness, injuries, or coaching conflicts. Flexibility allows adjustments in response to changing circumstances while still maintaining focus and discipline. Flexibility is not an excuse for lack of planning.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "5.3  END OF DAY (EOD) REPORT",
       },
       {
         type: "body",
@@ -312,18 +328,6 @@ export const SECTIONS: ManualSection[] = [
           "EOD reports provide documentation for future planning and serve as added protection for coaches.",
           "PENALTY: Failure to complete an EOD report = $10.00 deduction per missed report.",
           "Failure to complete EOD reports consistently is grounds for a formal write-up.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "5.3  THE THREE PILLARS OF PRACTICE PLANNING",
-      },
-      {
-        type: "bullet",
-        items: [
-          "DETAILED PLAN: Every minute of practice must be accounted for. Be specific with your coaching goals and direct in your expectations. A plan that says 'work on stunts' is not a plan — a plan that says 'work on the load-in timing for the double-down sequence at count 32' is a plan.",
-          "COMMUNICATE: Efficiency comes from everyone having a clear understanding of the plan. This includes co-coaches, athletes, and parents. Plans posted to Band before practice provide documentation, transparency, and protection.",
-          "EXECUTE WITH FLEXIBILITY: The environment can change unexpectedly — unforeseen tardiness, injuries, or coaching conflicts. Flexibility allows adjustments in response to changing circumstances while still maintaining focus and discipline. Flexibility is not an excuse for lack of planning.",
         ],
       },
     ],
@@ -398,16 +402,60 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "The jump system must be executed at a minimum of once per week. Two options are available for the jump system, and coaches may choose the appropriate option based on the practice schedule and team needs.",
+        text: "The jump system must be executed at a minimum of once per week — this is a non-negotiable requirement. Cheer Florida uses two distinct jump system options depending on where the team is in the season. Coaches must select the appropriate option based on the current phase of the season.",
+      },
+      {
+        type: "body",
+        text: "All drills in both jump systems are choreographed and performed on an 8-count track. This means arm paths, leg actions, and timing are predefined. Athletes know exactly when to move and how to move. Running drills on an 8-count allows coaches to keep athletes synchronized, control tempo and intensity, transition quickly between drills, eliminate wasted instruction time, and maintain practice flow without stopping. Instead of explaining every rep, the count and choreography drive execution.",
+      },
+      {
+        type: "body",
+        text: "Jump training is always divided into three distinct sections that are not interchangeable and are never combined randomly. Each section trains a different physical quality and serves a specific purpose: Plyometrics (explosive power and height), Isometrics (strength and body position), and Repetitions (muscle memory and consistency). Regardless of which system is in use, each section is given equal priority in the practice plan. No single section matters more than the others — consistency comes from training all three intentionally, not favoring one.",
+      },
+      {
+        type: "section_label",
+        text: "6.4A  OPTION 1: THE 30-MINUTE FOUNDATION SYSTEM (Building Phase)",
+      },
+      {
+        type: "body",
+        text: "The 30-Minute Foundation System is the primary jump training system used during the building phase of the season. This system is designed to be used from the start of the season through mid-season. During this phase, athletes return from summer breaks and practices shift toward routine construction, stunting, and tumbling being finalized. The Foundation System begins to introduce jumps into practice through extended conditioning blocks that are short, intentional segments that integrate directly into practice. The emphasis is on quality, organization, and consistency — not volume.",
       },
       {
         type: "bullet",
         items: [
-          "OPTION A: Full Jump System — Complete jump training sequence including approach, execution, and landing technique for all required jumps.",
-          "OPTION B: Jump Conditioning Drills — Targeted conditioning exercises designed to improve jump height, technique, and consistency.",
-          "The jump system must be completed at minimum once per week — this is a non-negotiable requirement.",
-          "Both options are equally acceptable — the choice depends on the practice focus for that week.",
-          "Jump performance must be tracked and documented as part of athlete development progress.",
+          "Used during the building phase of the season (early to mid-season).",
+          "Dedicated 30-minute block structured across Plyometrics, Isometrics, and Repetitions.",
+          "Designed to build jump height, technique, and consistency from the ground up.",
+          "All drills are run on an 8-count choreographed track — no free-form reps.",
+          "Coaches must actively lead, count, and correct throughout the entire block.",
+          "This system is the foundation — athletes who master this phase carry that quality into the maintenance phase.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "6.4B  OPTION 2: THE 5-5-5 MAINTENANCE SYSTEM (Maintenance Phase)",
+      },
+      {
+        type: "body",
+        text: "The 5-5-5 Maintenance System is used during the maintenance phase of the season. Once the season is underway, the goal is no longer to build — it is to maintain. Jump training is condensed into a simple 5-5-5 structure: 5 minutes of Plyometrics, 5 minutes of Isometrics, and 5 minutes of Repetitions. This keeps jumps sharp without stealing time from routines, stunts, or tumbling. Maintenance is what allows jumps to stay consistent late in the season, when most teams see decline.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Used during the maintenance phase of the season (mid-season through competition season).",
+          "5 minutes Plyometrics + 5 minutes Isometrics + 5 minutes Repetitions = 15-minute total block.",
+          "Designed to preserve jump quality already built during the Foundation phase.",
+          "All drills remain on the 8-count choreographed track — same structure, condensed time.",
+          "Coaches must maintain the same energy and standards as the Foundation System — shorter does not mean less focused.",
+          "Do not skip the 5-5-5 because the season is busy — this is exactly when it matters most.",
+        ],
+      },
+      {
+        type: "bullet",
+        items: [
+          "MINIMUM REQUIREMENT: The jump system (either option) must be completed at least once per week.",
+          "The choice of system is determined by the current phase of the season — not by coach preference or convenience.",
+          "Jump performance must be tracked and documented as part of athlete development progress in the EOD report.",
         ],
       },
       {
