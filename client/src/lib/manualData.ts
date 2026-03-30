@@ -762,35 +762,48 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "10.3  SCHEDULED GYM CLOSURES",
+        text: "10.3  SCHEDULED GYM CLOSURES & HOLIDAYS",
       },
       {
         type: "body",
-        text: "Cheer Florida observes the following scheduled gym closures each year. These are program-wide closures and do not require PTO to be used. All staff are expected to be aware of these dates at the start of each season.",
+        text: "Cheer Florida observes the following scheduled gym closures each year. These are program-wide closures — no PTO is required for these periods. All staff are expected to be aware of these dates at the start of each season.",
       },
       {
-        type: "two_col",
-        left: "4th of July Week",
-        right: "Early July — Full week closure",
+        type: "section_label",
+        text: "Program Scheduled Closures",
       },
       {
-        type: "two_col",
-        left: "Spring Break Week",
-        right: "March/April — Full week closure",
+        type: "bullet",
+        items: [
+          "4th of July Week — Full week closure (early July)",
+          "Spring Break Week — Full week closure (March/April, aligned with local school district)",
+          "Thanksgiving Week — Full week closure (late November)",
+          "Christmas / New Year Break — 2 full weeks closure (late December through early January)",
+        ],
       },
       {
-        type: "two_col",
-        left: "Thanksgiving Week",
-        right: "Late November — Full week closure",
-      },
-      {
-        type: "two_col",
-        left: "Christmas / New Year Break",
-        right: "2 weeks, late December through early January",
+        type: "section_label",
+        text: "Federal Holidays Observed",
       },
       {
         type: "body",
-        text: "Compensation during scheduled closures: Salaried staff are paid at their normal rate for all closure weeks. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks. Private lesson hours are excluded from this calculation.",
+        text: "In addition to program closures, Cheer Florida observes the following federal holidays. The gym will be closed on these days and no practices or events will be scheduled. These days are paid for salaried staff and compensated at average regular coaching hours for hourly staff.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "New Year's Day — January 1",
+          "Martin Luther King Jr. Day — 3rd Monday in January",
+          "Memorial Day — Last Monday in May",
+          "Independence Day — July 4",
+          "Labor Day — 1st Monday in September",
+          "Thanksgiving Day — 4th Thursday in November",
+          "Christmas Day — December 25",
+        ],
+      },
+      {
+        type: "body",
+        text: "Compensation during all scheduled closures and federal holidays: Salaried staff are paid at their normal rate. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks. Private lesson hours are excluded from this calculation.",
       },
       {
         type: "section_label",

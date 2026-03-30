@@ -185,6 +185,14 @@ function RenderBlock({ block }: { block: ContentBlock }) {
         </div>
       );
 
+    case "two_col":
+      return (
+        <div className="flex items-stretch mb-1 text-[14px] border-b border-[oklch(0.92_0.005_264)] last:border-b-0">
+          <div className="w-1/2 py-2.5 pr-4 font-semibold text-[oklch(0.22_0.06_264)]">{block.left}</div>
+          <div className="w-1/2 py-2.5 text-[oklch(0.35_0.01_264)]">{block.right}</div>
+        </div>
+      );
+
     default:
       return null;
   }
