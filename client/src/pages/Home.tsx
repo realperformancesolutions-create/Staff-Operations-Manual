@@ -151,13 +151,16 @@ function RenderBlock({ block }: { block: ContentBlock }) {
               </tr>
             </thead>
             <tbody>
-              {block.rows.map((row, i) => (
-                <tr key={i} className={i % 2 === 0 ? "bg-[oklch(0.97_0.002_264)]" : "bg-white"}>
-                  <td className="px-4 py-3 font-bold text-[oklch(0.32_0.14_142)]">{row.amount}</td>
-                  <td className="px-4 py-3 font-semibold text-[oklch(0.22_0.06_264)]">{row.description}</td>
-                  <td className="px-4 py-3 text-[oklch(0.35_0.01_264)]">{row.notes}</td>
-                </tr>
-              ))}
+              {block.rows.map((row, i) => {
+                const isPending = row.description.includes("PENDING");
+                return (
+                  <tr key={i} className={isPending ? "bg-amber-100 border-l-4 border-amber-400" : i % 2 === 0 ? "bg-[oklch(0.97_0.002_264)]" : "bg-white"}>
+                    <td className={`px-4 py-3 font-bold ${isPending ? "text-amber-700" : "text-[oklch(0.32_0.14_142)]"}`}>{row.amount}</td>
+                    <td className={`px-4 py-3 font-semibold ${isPending ? "text-amber-800" : "text-[oklch(0.22_0.06_264)]"}`}>{row.description}</td>
+                    <td className={`px-4 py-3 ${isPending ? "text-amber-700 italic" : "text-[oklch(0.35_0.01_264)]"}`}>{row.notes}</td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
