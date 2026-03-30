@@ -199,7 +199,7 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "All new coaches begin employment with a probationary period. During this time, performance will be evaluated based on:
+        text: `All new coaches begin employment with a probationary period. During this time, performance will be evaluated based on:
 
 Attendance
 Practice quality
@@ -215,7 +215,7 @@ To support clarity and development, formal check-ins will be conducted at:
 
 These checkpoints are designed to provide feedback, address any gaps, and ensure alignment with program standards.
 
-Successful completion of the 90-day probationary period is required for continued employment.",
+Successful completion of the 90-day probationary period is required for continued employment.`,
       },
       {
         type: "section_label",
@@ -223,13 +223,13 @@ Successful completion of the 90-day probationary period is required for continue
       },
       {
         type: "body",
-        text: "All team coaches report directly to the All Star Director. Any concerns, questions, or issues must be communicated through the proper chain of command:
+        text: `All team coaches report directly to the All Star Director. Any concerns, questions, or issues must be communicated through the proper chain of command:
 
 All Star Director
 Program Director
 Ownership
 
-Coaches are not to escalate issues beyond this structure without first following each level of communication. The only exception is in cases involving the All Star Director directly.",
+Coaches are not to escalate issues beyond this structure without first following each level of communication. The only exception is in cases involving the All Star Director directly.`,
       },
     ],
   },
@@ -313,9 +313,9 @@ Coaches are not to escalate issues beyond this structure without first following
           "Plans must account for every minute of practice time — be specific with coaching goals and direct in your expectations.",
           "Practice plans must include all non-negotiable systems: H.I.I.T. warm-up, stretch system, tumbling drills, and jump system (minimum once per week).",
           "Scheduled practices are NOT to be used for choreography purposes. Routine changes must be done outside of normally scheduled practice time.",
-          "PENALTY: Coaches are allowed up to 2 missed practice plan submissions.
+          `PENALTY: Coaches are allowed up to 2 missed practice plan submissions.
 
-Beginning with the 3rd missed submission, a $10.00 deduction will be applied for each additional missed plan.",
+Beginning with the 3rd missed submission, a $10.00 deduction will be applied for each additional missed plan.`,
         ],
       },
       {
@@ -707,15 +707,15 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
           "Coaches must arrive at least 15 minutes before the scheduled start of practice to set up and prepare.",
           "Tardiness is defined as arriving after the scheduled start time without prior approval.",
           "Unexcused absences are defined as any absence not approved in advance by the All Star Director.",
-          "PENALTY: Unexcused tardiness will be addressed using a tiered system:
+          `PENALTY: Unexcused tardiness will be addressed using a tiered system:
 
 1st offense: Warning
 2nd offense: $15.00 deduction
-3rd offense and beyond: $25.00 deduction per occurrence",
-          "PENALTY: Unexcused absences are tracked and escalate:
+3rd offense and beyond: $25.00 deduction per occurrence`,
+          `PENALTY: Unexcused absences are tracked and escalate:
 1st occurrence: Warning
 2nd occurrence: $50.00 deduction
-3rd occurrence and beyond: $100.00 deduction each time",
+3rd occurrence and beyond: $100.00 deduction each time`,
           "Consistent attendance issues will result in a formal performance review and may result in termination.",
         ],
       },
@@ -732,7 +732,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
         items: [
           {
             title: "Submit Request in employee portal",
-            desc: "All time off requests must be submitted through the Employee Portal. Verbal requests will not be accepted.
+            desc: `All time off requests must be submitted through the Employee Portal. Verbal requests will not be accepted.
 
 All requests will go through a three-step approval process:
 
@@ -740,7 +740,7 @@ All Star Director
 Program Director
 Owner (final approval)
 
-Time off is not considered approved until it has passed through all three levels of approval.",
+Time off is not considered approved until it has passed through all three levels of approval.`,
           },
           {
             title: "Minimum 2-Week Notice",
