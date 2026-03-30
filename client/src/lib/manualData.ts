@@ -787,7 +787,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "body",
-        text: "In addition to program closures, Cheer Florida observes the following federal holidays. The gym will be closed on these days and no practices or events will be scheduled. These days are paid for salaried staff and compensated at average regular coaching hours for hourly staff.",
+        text: "In addition to program closures, Cheer Florida observes the following federal holidays. The gym will be closed on these days and no practices or events will be scheduled. These days are paid for all salaried staff and all non-salaried All Star coaches.",
       },
       {
         type: "bullet",
@@ -795,6 +795,7 @@ Time off is not considered approved until it has passed through all three levels
           "New Year's Day — January 1",
           "Martin Luther King Jr. Day — 3rd Monday in January",
           "Memorial Day — Last Monday in May",
+          "Juneteenth National Independence Day — June 19",
           "Independence Day — July 4",
           "Labor Day — 1st Monday in September",
           "Thanksgiving Day — 4th Thursday in November",
@@ -803,7 +804,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "body",
-        text: "Compensation during all scheduled closures and federal holidays: Salaried staff are paid at their normal rate. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks. Private lesson hours are excluded from this calculation.",
+        text: "Compensation during all scheduled closures and federal holidays: All salaried staff and non-salaried All Star coaches are paid at their normal rate for these periods. Other hourly staff are not compensated during gym closures.",
       },
       {
         type: "section_label",
