@@ -169,7 +169,7 @@ export const SECTIONS: ManualSection[] = [
         items: [
           "Technical Knowledge: Proficiency in cheerleading skills appropriate to the level being coached, including tumbling, stunting, jumps, and choreography.",
           "Communication: Clear, professional, and timely communication with athletes, parents, co-coaches, and program leadership.",
-          "Organization: Ability to plan, prepare, and execute structured practices with documented plans and end-of-day reports.",
+          "Organization: Ability to plan, prepare, and execute structured practices plan with and end-of-day reports.",
           "Accountability: Taking ownership of team performance, athlete development, and personal professional conduct.",
           "Adaptability: Ability to adjust coaching strategies in response to athlete needs, competition feedback, and program direction.",
           "Professionalism: Representing Cheer Florida with integrity at all times — in the gym, at competitions, and on social media.",
@@ -181,13 +181,13 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "All coaches must maintain current credentialing as required by Cheer Florida and applicable governing bodies:",
+        text: "All coaches must maintain current credentialing as required by Cheer Florida and USASF.",
       },
       {
         type: "bullet",
         items: [
           "Valid background check on file (renewed annually).",
-          "Current safety certification as required by the program's governing body.",
+          "Current safety certification as required by the USASF.",
           "CPR/First Aid certification (must be kept current).",
           "Any additional certifications required by the specific division or level being coached.",
           "Completion of all mandatory program training and onboarding materials.",
@@ -199,7 +199,23 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "All new coaches begin employment with a probationary period. During this time, performance will be evaluated based on attendance, practice quality, athlete development, communication, and adherence to program systems. Successful completion of the probationary period is required for continued employment.",
+        text: "All new coaches begin employment with a probationary period. During this time, performance will be evaluated based on:
+
+Attendance
+Practice quality
+Athlete development
+Communication
+Adherence to program systems
+
+To support clarity and development, formal check-ins will be conducted at:
+
+30 days
+60 days
+90 days (final evaluation)
+
+These checkpoints are designed to provide feedback, address any gaps, and ensure alignment with program standards.
+
+Successful completion of the 90-day probationary period is required for continued employment.",
       },
       {
         type: "section_label",
@@ -207,7 +223,13 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "All team coaches report directly to the Athletic Director. Any concerns, questions, or issues must be directed to the Athletic Director through appropriate channels. Coaches are not to escalate issues to ownership without first going through the Athletic Director, except in cases involving the Athletic Director directly.",
+        text: "All team coaches report directly to the All Star Director. Any concerns, questions, or issues must be communicated through the proper chain of command:
+
+All Star Director
+Program Director
+Ownership
+
+Coaches are not to escalate issues beyond this structure without first following each level of communication. The only exception is in cases involving the All Star Director directly.",
       },
     ],
   },
@@ -248,10 +270,10 @@ export const SECTIONS: ManualSection[] = [
         items: [
           "CFA-branded apparel must be worn during all practices and program events.",
           "Clothing must be clean, in good condition, and appropriate for an athletic coaching environment.",
-          "Footwear must be appropriate for the gym floor — no street shoes on the mat.",
+          "Coaches are required to wear proper athletic footwear at all times. Barefoot, sandals, Crocs, or any open-toed or non-supportive footwear are not permitted.",
           "Hair must be neat and out of the face during practice.",
           "Excessive or distracting jewelry is not permitted during practice.",
-          "Tattoos and piercings must comply with program standards as communicated by leadership.",
+          
         ],
       },
       {
@@ -291,7 +313,9 @@ export const SECTIONS: ManualSection[] = [
           "Plans must account for every minute of practice time — be specific with coaching goals and direct in your expectations.",
           "Practice plans must include all non-negotiable systems: H.I.I.T. warm-up, stretch system, tumbling drills, and jump system (minimum once per week).",
           "Scheduled practices are NOT to be used for choreography purposes. Routine changes must be done outside of normally scheduled practice time.",
-          "PENALTY: Failure to submit a practice plan = $10.00 deduction.",
+          "PENALTY: Coaches are allowed up to 2 missed practice plan submissions.
+
+Beginning with the 3rd missed submission, a $10.00 deduction will be applied for each additional missed plan.",
         ],
       },
       {
@@ -490,7 +514,7 @@ export const SECTIONS: ManualSection[] = [
         items: [
           "Attendance must be taken at the start of every practice and documented in the EOD report.",
           "Coaches must follow up with absent athletes and their families within 24 hours of a missed practice.",
-          "Patterns of absence must be reported to the Athletic Director immediately.",
+          "Patterns of absence must be reported to the All Star Director immediately.",
           "Coaches must maintain awareness of how absences are impacting team skill development and routine execution.",
           "Document all absence follow-up in your End of Day Report.",
         ],
@@ -521,7 +545,7 @@ export const SECTIONS: ManualSection[] = [
         type: "bullet",
         items: [
           "Coaches must actively foster a positive, inclusive, and high-performance team culture.",
-          "Team bonding activities should be incorporated into the season plan.",
+          "Team bonding activities should be incorporated into the season plan, and coaches are expected to attend and actively participate in all scheduled team events.",
           "Coaches must address any bullying, exclusion, or negative social dynamics immediately.",
           "Celebrate individual and team milestones — recognition is a powerful motivational tool.",
           "Model the team culture you want to see — athletes will mirror the energy and attitude of their coach.",
@@ -581,7 +605,7 @@ export const SECTIONS: ManualSection[] = [
           "Band is the official communication platform for team-related announcements and updates.",
           "All team communications must go through Band — not personal text messages or social media DMs.",
           "Coaches must post practice plans to Band before each practice.",
-          "Emergency communications must be escalated to the Athletic Director immediately.",
+          "Emergency communications must be escalated to the All Star Director immediately.",
           "Coaches must never communicate with athletes under the age of 18 through personal social media accounts.",
         ],
       },
@@ -658,7 +682,7 @@ export const SECTIONS: ManualSection[] = [
           "Per diem rates and reimbursement policies will be communicated by leadership prior to travel.",
           "Coaches must maintain professional conduct at all times during travel — you represent Cheer Florida 24/7.",
           "Substance use policy applies during all travel — coaches may not consume alcohol while responsible for athletes.",
-          "Any incidents during travel must be reported to the Athletic Director immediately.",
+          "Any incidents during travel must be reported immediately to the All Star Director, as well as all directors within the program",
         ],
       },
     ],
@@ -682,9 +706,16 @@ export const SECTIONS: ManualSection[] = [
           "Coaches must be present at every scheduled practice and program event.",
           "Coaches must arrive at least 15 minutes before the scheduled start of practice to set up and prepare.",
           "Tardiness is defined as arriving after the scheduled start time without prior approval.",
-          "Unexcused absences are defined as any absence not approved in advance by the Athletic Director.",
-          "PENALTY: Tardiness (unexcused) = $25.00 deduction.",
-          "PENALTY: Unexcused absence = $100.00 deduction.",
+          "Unexcused absences are defined as any absence not approved in advance by the All Star Director.",
+          "PENALTY: Unexcused tardiness will be addressed using a tiered system:
+
+1st offense: Warning
+2nd offense: $15.00 deduction
+3rd offense and beyond: $25.00 deduction per occurrence",
+          "PENALTY: Unexcused absences are tracked and escalate:
+1st occurrence: Warning
+2nd occurrence: $50.00 deduction
+3rd occurrence and beyond: $100.00 deduction each time",
           "Consistent attendance issues will result in a formal performance review and may result in termination.",
         ],
       },
@@ -700,8 +731,16 @@ export const SECTIONS: ManualSection[] = [
         type: "steps",
         items: [
           {
-            title: "Submit Request in Writing",
-            desc: "All time off requests must be submitted in writing to the Athletic Director. Verbal requests will not be accepted.",
+            title: "Submit Request in employee portal",
+            desc: "All time off requests must be submitted through the Employee Portal. Verbal requests will not be accepted.
+
+All requests will go through a three-step approval process:
+
+All Star Director
+Program Director
+Owner (final approval)
+
+Time off is not considered approved until it has passed through all three levels of approval.",
           },
           {
             title: "Minimum 2-Week Notice",
@@ -712,8 +751,8 @@ export const SECTIONS: ManualSection[] = [
             desc: "The requesting coach must identify and arrange a qualified substitute coach and submit the coverage plan with the request.",
           },
           {
-            title: "Await Written Approval",
-            desc: "Time off is not approved until the Athletic Director provides written confirmation. Do not assume approval based on verbal discussion.",
+            title: "Await Approval/Denial Confirmation",
+            desc: "Time off is not approved until it has gone through all three channels of approval — All Star Director, Program Director, and Owners. Verbal discussions do not count as approval.",
           },
           {
             title: "Brief Your Substitute",
@@ -875,7 +914,7 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "Coaches who consistently miss benchmarks will be subject to a formal performance review. The Athletic Director will meet with the coach to identify barriers, create an improvement plan, and establish a timeline for correction. Continued failure to meet benchmarks after a performance review may result in reassignment, suspension, or termination.",
+        text: "Coaches who consistently miss benchmarks will be subject to a formal performance review. The All Star Director will meet with the coach to identify barriers, create an improvement plan, and establish a timeline for correction. Continued failure to meet benchmarks after a performance review may result in reassignment, suspension, or termination.",
       },
     ],
   },
@@ -908,8 +947,8 @@ export const SECTIONS: ManualSection[] = [
             desc: "Contact the athlete's parent or guardian immediately. Do not minimize the injury or delay notification.",
           },
           {
-            title: "Notify the Athletic Director",
-            desc: "Contact the Athletic Director immediately following any injury, regardless of severity.",
+            title: "Notify the All Star Director",
+            desc: "Contact the All Star Director immediately following any injury, regardless of severity.",
           },
           {
             title: "Complete the Injury Report Form",
@@ -1037,7 +1076,7 @@ export const SECTIONS: ManualSection[] = [
         type: "bullet",
         items: [
           "Written parental consent is required before posting any photo or video of a minor athlete on any platform.",
-          "Consent forms are available from the Athletic Director and must be on file before any posting.",
+          "Consent forms are available from the All Star Director and must be on file before any posting.",
           "When in doubt, do not post. Always err on the side of caution when it comes to images of minors.",
           "Tag restrictions: Do not tag minors in posts without explicit parental permission.",
         ],
@@ -1163,12 +1202,12 @@ export const SECTIONS: ManualSection[] = [
         type: "steps",
         items: [
           {
-            title: "Report to the Athletic Director",
-            desc: "Any coach who experiences or witnesses sexual harassment must report it to the Athletic Director immediately.",
+            title: "Report to the All Star Director",
+            desc: "Any coach who experiences or witnesses sexual harassment must report it to the All Star Director/Program Director/Owners immediately.",
           },
           {
-            title: "If the AD is Involved",
-            desc: "If the Athletic Director is the subject of the complaint, report directly to program ownership.",
+            title: "If the ASD is Involved",
+            desc: "If the All Star Director is the subject of the complaint, report directly to program ownership.",
           },
           {
             title: "Written Documentation",
@@ -1278,7 +1317,7 @@ export const SECTIONS: ManualSection[] = [
       {
         type: "bullet",
         items: [
-          "All private lessons must be pre-approved by the Athletic Director.",
+        
           "Coaches may only offer private lessons to athletes currently enrolled in the Cheer Florida program.",
           "Private lessons must be conducted at a Cheer Florida facility during approved hours.",
           "Coaches may not conduct private lessons at competing facilities or in private residences.",
