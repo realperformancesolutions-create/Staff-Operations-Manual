@@ -169,7 +169,7 @@ export const SECTIONS: ManualSection[] = [
         items: [
           "Technical Knowledge: Proficiency in cheerleading skills appropriate to the level being coached, including tumbling, stunting, jumps, and choreography.",
           "Communication: Clear, professional, and timely communication with athletes, parents, co-coaches, and program leadership.",
-          "Organization: Ability to plan, prepare, and execute structured practices plan with and end-of-day reports.",
+          "Organization: Ability to plan, prepare, and execute structured practice plans with end-of-day reports.",
           "Accountability: Taking ownership of team performance, athlete development, and personal professional conduct.",
           "Adaptability: Ability to adjust coaching strategies in response to athlete needs, competition feedback, and program direction.",
           "Professionalism: Representing Cheer Florida with integrity at all times — in the gym, at competitions, and on social media.",
@@ -759,6 +759,70 @@ Time off is not considered approved until it has passed through all three levels
             desc: "Before your absence, you must fully brief your substitute on the practice plan, athlete needs, and any relevant team information.",
           },
         ],
+      },
+      {
+        type: "section_label",
+        text: "10.3  SCHEDULED GYM CLOSURES",
+      },
+      {
+        type: "body",
+        text: "Cheer Florida observes the following scheduled gym closures each year. These are program-wide closures and do not require PTO to be used. All staff are expected to be aware of these dates at the start of each season.",
+      },
+      {
+        type: "two_col",
+        left: "4th of July Week",
+        right: "Early July — Full week closure",
+      },
+      {
+        type: "two_col",
+        left: "Spring Break Week",
+        right: "March/April — Full week closure",
+      },
+      {
+        type: "two_col",
+        left: "Thanksgiving Week",
+        right: "Late November — Full week closure",
+      },
+      {
+        type: "two_col",
+        left: "Christmas / New Year Break",
+        right: "2 weeks, late December through early January",
+      },
+      {
+        type: "body",
+        text: "Compensation during scheduled closures: Salaried staff are paid at their normal rate for all closure weeks. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks. Private lesson hours are excluded from this calculation.",
+      },
+      {
+        type: "section_label",
+        text: "10.4  PTO ACCRUAL POLICY",
+      },
+      {
+        type: "body",
+        text: "In addition to scheduled gym closures, all coaching staff accrue Paid Time Off (PTO) based on their years of service with Cheer Florida. PTO is intended for personal days, appointments, or additional time away beyond scheduled closures. PTO does not roll over at the end of each season — unused days are forfeited. There is no cash payout for unused PTO.",
+      },
+      {
+        type: "two_col",
+        left: "0–1 Year (after 90-day probation)",
+        right: "1 PTO Day per season",
+      },
+      {
+        type: "two_col",
+        left: "1–2 Years",
+        right: "2 PTO Days per season",
+      },
+      {
+        type: "two_col",
+        left: "2–4 Years",
+        right: "3 PTO Days per season",
+      },
+      {
+        type: "two_col",
+        left: "4+ Years",
+        right: "5 PTO Days per season",
+      },
+      {
+        type: "body",
+        text: "PTO compensation: Salaried staff are paid at their normal rate. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks (private lesson hours excluded). PTO requests must follow the Time Off Request Process outlined in Section 10.2. Blackout periods apply — PTO may not be used during competition season (November–April) or any mandatory program events. Emergency and bereavement situations are reviewed on a case-by-case basis by the All Star Director.",
       },
     ],
   },
