@@ -330,7 +330,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
         items: [
           "An EOD report must be completed at the end of every practice day (estimated time: 5–10 minutes).",
           "The report must include: work completed during practice, work in progress, and plans for the next session.",
-          "EOD reports are turned in nightly to the Athletic Director and placed in the team binder.",
+          "EOD reports are turned in nightly to the All-Star Director and placed in the team binder.",
           "EOD reports provide documentation for future planning and serve as added protection for coaches.",
           "PENALTY: Failure to complete an EOD report = $10.00 deduction per missed report.",
           "Failure to complete EOD reports consistently is grounds for a formal write-up.",
@@ -505,7 +505,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
         type: "bullet",
         items: [
           "Athletes must notify the coach in advance of any planned absence.",
-          "Unexcused absences must be reported to the Athletic Director.",
+          "Unexcused absences must be reported to the All-Star Director.",
           "Coaches must have a clear attendance policy communicated to athletes and families at the start of the season.",
           "Repeated unexcused absences may result in the athlete being removed from performance opportunities.",
           "Coaches must document all absences and follow-up actions in the team binder and EOD report.",
@@ -946,7 +946,7 @@ Time off is not considered approved until it has passed through all three levels
           "All championship bonuses require that the division was contested — uncontested wins do not qualify for any bonus.",
           "Coaches must be in good standing (no active disciplinary actions) to qualify for any bonus.",
           "Bonuses are paid at the end of the competitive season following final accounting.",
-          "Disputes regarding bonus qualifications must be submitted in writing to the Athletic Director within 7 days of the competition.",
+          "Disputes regarding bonus qualifications must be submitted in writing to the All-Star Director within 7 days of the competition.",
         ],
       },
     ],
@@ -1201,7 +1201,7 @@ Time off is not considered approved until it has passed through all three levels
           "Any form of sexual abuse, exploitation, or misconduct involving a minor is a criminal offense and will be reported to law enforcement immediately.",
           "Inappropriate physical contact of any kind — including contact that may appear innocent — is prohibited.",
           "Coaches must never be alone in a closed space with a single athlete.",
-          "Coaches must never transport an athlete alone in a vehicle without written parental consent and Athletic Director approval.",
+          "Coaches must never transport an athlete alone in a vehicle without written parental consent and All-Star Director approval.",
           "Any romantic or sexual relationship between a coach and an athlete is strictly prohibited, regardless of the athlete's age.",
         ],
       },
@@ -1216,7 +1216,7 @@ Time off is not considered approved until it has passed through all three levels
       {
         type: "bullet",
         items: [
-          "Report immediately to the Athletic Director AND to the appropriate child protective services agency.",
+          "Report immediately to the All-Star Director AND to the appropriate child protective services agency.",
           "Do not investigate the allegation yourself — your role is to report, not investigate.",
           "Do not confront the alleged abuser.",
           "Do not promise confidentiality to the child — explain that you are required to report.",
