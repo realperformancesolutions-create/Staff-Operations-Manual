@@ -902,13 +902,18 @@ Time off is not considered approved until it has passed through all three levels
           },
           {
             amount: "$50.00",
-            description: "Bid Bonus — Wildcard / At-Large / Partial Paid",
-            notes: "Awarded for earning a Wildcard, At-Large, or Partial Paid bid. Bids cannot be handed down — they must be earned through competition.",
+            description: "Bid Bonus — Wildcard / At-Large",
+            notes: "Base bid bonus awarded for earning a Wildcard or At-Large bid. Bids cannot be handed down — they must be earned through competition.",
           },
           {
-            amount: "+$50.00",
-            description: "Bid Bonus — Full Paid (Additional)",
-            notes: "Additional $50 awarded on top of the base bid bonus when a Full Paid bid is earned. Total bid bonus potential: $100. Same qualification rules apply.",
+            amount: "+$25.00",
+            description: "Bid Bonus — Partial Paid (Upgrade)",
+            notes: "Additional $25 awarded when the bid is upgraded to a Partial Paid bid. Stacks with the base $50 Wildcard/At-Large bonus. Total: $75.",
+          },
+          {
+            amount: "+$25.00",
+            description: "Bid Bonus — Full Paid (Upgrade)",
+            notes: "Additional $25 awarded when the bid is further upgraded to a Full Paid bid. Stacks with all prior bid bonuses. Total potential: $100.",
           },
           {
             amount: "$150.00",
