@@ -199,23 +199,7 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: `All new coaches begin employment with a probationary period. During this time, performance will be evaluated based on:
-
-Attendance
-Practice quality
-Athlete development
-Communication
-Adherence to program systems
-
-To support clarity and development, formal check-ins will be conducted at:
-
-30 days
-60 days
-90 days (final evaluation)
-
-These checkpoints are designed to provide feedback, address any gaps, and ensure alignment with program standards.
-
-Successful completion of the 90-day probationary period is required for continued employment.`,
+        text: `All new coaches begin employment with a probationary period. During this time, performance will be evaluated based on attendance, practice quality, athlete development, communication, and adherence to program systems. To support clarity and development, formal check-ins will be conducted at 30 days, 60 days, and 90 days (final evaluation). These checkpoints are designed to provide feedback, address any gaps, and ensure alignment with program standards. Successful completion of the 90-day probationary period is required for continued employment.`,
       },
       {
         type: "section_label",
@@ -223,13 +207,7 @@ Successful completion of the 90-day probationary period is required for continue
       },
       {
         type: "body",
-        text: `All team coaches report directly to the All Star Director. Any concerns, questions, or issues must be communicated through the proper chain of command:
-
-All Star Director
-Program Director
-Ownership
-
-Coaches are not to escalate issues beyond this structure without first following each level of communication. The only exception is in cases involving the All Star Director directly.`,
+        text: `All team coaches report directly to the All-Star Director. Any concerns, questions, or issues must be communicated through the proper chain of command: All-Star Director, Program Director, Ownership. Coaches are not to escalate issues beyond this structure without first following each level of communication. The only exception is in cases where the issue directly involves the individual at that level of the chain. In cases involving the All-Star Director directly, concerns should be brought to the Program Director or Ownership. In cases involving the Program Director directly, concerns should be escalated to Ownership.`,
       },
     ],
   },
