@@ -857,9 +857,34 @@ Time off is not considered approved until it has passed through all three levels
         type: "penalty_table",
         rows: [
           {
+            amount: "Warning",
+            description: "Tardiness — 1st Offense",
+            notes: "Verbal warning issued. No financial deduction on first offense.",
+          },
+          {
+            amount: "$15.00",
+            description: "Tardiness — 2nd Offense",
+            notes: "$15.00 deduction applied on the second unexcused tardiness occurrence.",
+          },
+          {
             amount: "$25.00",
-            description: "Tardiness (Unexcused)",
-            notes: "Applied per occurrence of unexcused tardiness to a scheduled practice or program event.",
+            description: "Tardiness — 3rd Offense & Beyond",
+            notes: "$25.00 deduction applied per occurrence from the 3rd offense onward.",
+          },
+          {
+            amount: "Warning",
+            description: "Unexcused Absence — 1st Occurrence",
+            notes: "Verbal warning issued. No financial deduction on first occurrence.",
+          },
+          {
+            amount: "$50.00",
+            description: "Unexcused Absence — 2nd Occurrence",
+            notes: "$50.00 deduction applied on the second unexcused absence.",
+          },
+          {
+            amount: "$100.00",
+            description: "Unexcused Absence — 3rd Occurrence & Beyond",
+            notes: "$100.00 deduction applied per occurrence from the 3rd unexcused absence onward. Consistent issues may result in formal review or termination.",
           },
           {
             amount: "$10.00",
@@ -875,11 +900,6 @@ Time off is not considered approved until it has passed through all three levels
             amount: "$50.00",
             description: "Missed Benchmarks",
             notes: "Applied when a coach's team fails to meet the established seasonal benchmarks without documented justification.",
-          },
-          {
-            amount: "$100.00",
-            description: "Unexcused Absence",
-            notes: "Applied per unexcused absence from a scheduled practice or required program event.",
           },
         ],
       },
