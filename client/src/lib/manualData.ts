@@ -298,7 +298,7 @@ export const SECTIONS: ManualSection[] = [
           "Conditioning is a scheduled, purposeful component of practice — not a reactive consequence.",
           "If an athlete is struggling with a skill, the response is coaching: break it down, correct the technique, and build confidence.",
           "If a team is underperforming, the response is leadership: identify the root cause and address it constructively.",
-          "PENALTY: Coaches who use conditioning as a consequence for mistakes or performance will receive an immediate formal write-up and a $100.00 deduction. Repeat violations are grounds for termination.",
+          "PENALTY: 1st offense — formal write-up issued. 2nd offense — $50.00 deduction. 3rd offense — $100.00 deduction. Any offense after the 3rd is subject to termination.",
         ],
       },
       {
@@ -339,7 +339,7 @@ export const SECTIONS: ManualSection[] = [
         items: [
           "All practice schedule changes must be approved by the Director of Program Development & Operations before any communication goes out to athletes or families.",
           "Coaches may not end practice early, start late, or cancel sessions without explicit leadership approval.",
-          "PENALTY: Unauthorized schedule changes will result in an immediate formal write-up and a $75.00 deduction. Repeated violations may result in reassignment or termination.",
+          "PENALTY: 1st offense — formal write-up issued. 2nd offense — $50.00 deduction. 3rd offense — $100.00 deduction. Any offense after the 3rd is subject to termination.",
         ],
       },
       {
@@ -984,14 +984,34 @@ Time off is not considered approved until it has passed through all three levels
             notes: "A formal warning is issued. The coach must submit the missed benchmark by the very next scheduled practice. If not submitted by then, the $50.00 fee is immediately assessed.",
           },
           {
-            amount: "$100.00",
-            description: "Conditioning Used as Punishment for Mistakes or Performance",
-            notes: "Immediate $100.00 deduction and formal write-up issued. Repeat violations are grounds for termination. Conditioning used for behavioral issues is permitted at coach discretion when applied fairly.",
+            amount: "Write-Up",
+            description: "Conditioning Used as Punishment for Mistakes or Performance — 1st Offense",
+            notes: "Formal write-up issued. No financial deduction on the first offense. Conditioning used for behavioral issues remains permitted at coach discretion when applied consistently and fairly.",
           },
           {
-            amount: "$75.00",
-            description: "Unauthorized Practice Schedule Change",
-            notes: "$75.00 deduction and formal write-up issued for any schedule change communicated without prior approval from the Director of Program Development & Operations. Repeated violations may result in reassignment or termination.",
+            amount: "$50.00",
+            description: "Conditioning Used as Punishment for Mistakes or Performance — 2nd Offense",
+            notes: "$50.00 deduction applied on the second offense.",
+          },
+          {
+            amount: "$100.00",
+            description: "Conditioning Used as Punishment for Mistakes or Performance — 3rd Offense & Beyond",
+            notes: "$100.00 deduction applied on the third offense. Any offense after the third is subject to termination.",
+          },
+          {
+            amount: "Write-Up",
+            description: "Unauthorized Practice Schedule Change — 1st Offense",
+            notes: "Formal write-up issued. No financial deduction on the first offense. All schedule changes require prior approval from the Director of Program Development & Operations.",
+          },
+          {
+            amount: "$50.00",
+            description: "Unauthorized Practice Schedule Change — 2nd Offense",
+            notes: "$50.00 deduction applied on the second offense.",
+          },
+          {
+            amount: "$100.00",
+            description: "Unauthorized Practice Schedule Change — 3rd Offense & Beyond",
+            notes: "$100.00 deduction applied on the third offense. Any offense after the third is subject to termination.",
           },
           {
             amount: "$100.00",
