@@ -286,7 +286,7 @@ export const SECTIONS: ManualSection[] = [
       },
       {
         type: "body",
-        text: "Conditioning — including running, push-ups, burpees, or any physical exercise — must never be used as a punishment for dropping stunts, poor performance, or behavioral issues. This practice is strictly prohibited at Cheer Florida.",
+        text: "Conditioning — including running, push-ups, burpees, or any physical exercise — must never be used as a consequence for mistakes, dropped stunts, or poor performance. This practice is strictly prohibited at Cheer Florida. Conditioning may be used as a consequence for behavioral issues — disrespect, defiance, or conduct violations — at the discretion of the coach, provided it is applied consistently, fairly, and never in a manner that humiliates or singles out an individual athlete.",
       },
       {
         type: "body",
@@ -298,7 +298,7 @@ export const SECTIONS: ManualSection[] = [
           "Conditioning is a scheduled, purposeful component of practice — not a reactive consequence.",
           "If an athlete is struggling with a skill, the response is coaching: break it down, correct the technique, and build confidence.",
           "If a team is underperforming, the response is leadership: identify the root cause and address it constructively.",
-          "Coaches who use conditioning as punishment will receive an immediate formal write-up. Repeat violations are grounds for termination.",
+          "PENALTY: Coaches who use conditioning as a consequence for mistakes or performance will receive an immediate formal write-up and a $100.00 deduction. Repeat violations are grounds for termination.",
         ],
       },
       {
@@ -337,10 +337,30 @@ export const SECTIONS: ManualSection[] = [
       {
         type: "bullet",
         items: [
-          "All practice schedule changes must be approved by the All-Star Director before any communication goes out to athletes or families.",
+          "All practice schedule changes must be approved by the Director of Program Development & Operations before any communication goes out to athletes or families.",
           "Coaches may not end practice early, start late, or cancel sessions without explicit leadership approval.",
-          "Unauthorized schedule changes will result in a formal write-up and a financial penalty as outlined in the Bonus & Penalty Structure.",
-          "Repeated violations will be treated as a breach of professional standards and may result in reassignment or termination.",
+          "PENALTY: Unauthorized schedule changes will result in an immediate formal write-up and a $75.00 deduction. Repeated violations may result in reassignment or termination.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "5.4  ENDING PRACTICE EARLY OUT OF FRUSTRATION",
+      },
+      {
+        type: "body",
+        text: "Coaches are never permitted to end a practice early and send athletes home because they are frustrated, disappointed, or fed up with the team's performance. This is one of the most damaging things a coach can do — and it will not happen at Cheer Florida.",
+      },
+      {
+        type: "body",
+        text: "Why this violates our culture: This behavior violates two of our four G.R.I.P. values simultaneously. It violates Guidance — a coach who sends athletes home because they are frustrated is not guiding anyone. They are abandoning their athletes at the exact moment those athletes need leadership most. It also violates Partnership — athletes and families have committed their time, their transportation, and their schedules to be at that practice. Sending them home early communicates that the coach's emotional state is more important than the commitments of every person in that gym. It destroys trust, damages team culture, and sets a standard of emotional instability that athletes will mirror. A Cheer Florida coach does not quit on a team. When practice is hard, when the team is struggling, when frustration is high — that is when great coaching happens.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Coaches must complete every scheduled practice for its full duration, regardless of performance or emotional state.",
+          "If a coach is struggling to manage frustration, they must communicate with the All-Star Director — not take it out on the team.",
+          "Ending practice early without leadership approval for any reason requires prior authorization from the Director of Program Development & Operations.",
+          "PENALTY: Ending practice early without authorization will result in an immediate formal write-up and a $100.00 deduction. If the decision was driven by frustration with athlete performance, the matter will be escalated to the Director of Program Development & Operations for review and may result in suspension or termination.",
         ],
       },
     ],
@@ -962,6 +982,21 @@ Time off is not considered approved until it has passed through all three levels
             amount: "Warning",
             description: "Missed Benchmarks — 1st Occurrence",
             notes: "A formal warning is issued. The coach must submit the missed benchmark by the very next scheduled practice. If not submitted by then, the $50.00 fee is immediately assessed.",
+          },
+          {
+            amount: "$100.00",
+            description: "Conditioning Used as Punishment for Mistakes or Performance",
+            notes: "Immediate $100.00 deduction and formal write-up issued. Repeat violations are grounds for termination. Conditioning used for behavioral issues is permitted at coach discretion when applied fairly.",
+          },
+          {
+            amount: "$75.00",
+            description: "Unauthorized Practice Schedule Change",
+            notes: "$75.00 deduction and formal write-up issued for any schedule change communicated without prior approval from the Director of Program Development & Operations. Repeated violations may result in reassignment or termination.",
+          },
+          {
+            amount: "$100.00",
+            description: "Ending Practice Early Without Authorization",
+            notes: "$100.00 deduction and formal write-up issued. If the early dismissal was driven by frustration with athlete performance, the matter is escalated to the Director of Program Development & Operations and may result in suspension or termination.",
           },
           {
             amount: "$50.00",
