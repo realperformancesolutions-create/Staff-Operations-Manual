@@ -273,12 +273,86 @@ export const SECTIONS: ManualSection[] = [
   },
   {
     num: "05",
+    title: "NON-NEGOTIABLE COACHING STANDARDS",
+    sub: "Culture Violations That Are Never Acceptable at Cheer Florida",
+    content: [
+      {
+        type: "italic_intro",
+        text: "The following standards are not preferences or suggestions — they are absolute non-negotiables. Each one represents a direct violation of our G.R.I.P. values and the culture we are committed to building at Cheer Florida. These behaviors will not be tolerated, and coaches who engage in them will be subject to immediate disciplinary action.",
+      },
+      {
+        type: "section_label",
+        text: "5.1  CONDITIONING AS PUNISHMENT",
+      },
+      {
+        type: "body",
+        text: "Conditioning — including running, push-ups, burpees, or any physical exercise — must never be used as a punishment for dropping stunts, poor performance, or behavioral issues. This practice is strictly prohibited at Cheer Florida.",
+      },
+      {
+        type: "body",
+        text: "Why this violates our culture: Our first G.R.I.P. value is Guidance — we are the compass for our athletes. We provide clear direction, model correct technique, and lead by example. Using physical conditioning as punishment transforms a tool of athletic development into a weapon of shame and fear. It teaches athletes to associate hard work with humiliation rather than growth. It creates an environment where athletes are afraid to fail, which is the opposite of the resilient, supportive culture we are building. A Cheer Florida coach responds to a dropped stunt with coaching — with technique correction, encouragement, and a plan to fix it. Not with a lap.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Conditioning is a scheduled, purposeful component of practice — not a reactive consequence.",
+          "If an athlete is struggling with a skill, the response is coaching: break it down, correct the technique, and build confidence.",
+          "If a team is underperforming, the response is leadership: identify the root cause and address it constructively.",
+          "Coaches who use conditioning as punishment will receive an immediate formal write-up. Repeat violations are grounds for termination.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "5.2  DOUBLE STANDARDS ON ATTENDANCE & COMMITMENT",
+      },
+      {
+        type: "body",
+        text: "We hold our athletes to a high standard of attendance and commitment. We ask them to prioritize practice, to not miss for non-essential activities during the season, and to show up ready to work every single time. That standard applies equally — and without exception — to every member of the coaching staff.",
+      },
+      {
+        type: "body",
+        text: "Why this violates our culture: Our fourth G.R.I.P. value is Partnership — we are partners to our athletes, their families, and the entire Cheer Florida staff. Partnership is built on trust, and trust is destroyed by double standards. When a coach misses practice for the same reasons they would hold an athlete accountable for, they send a clear message: the rules apply to you, not to me. That message is corrosive. It undermines team culture, erodes athlete respect, and signals that the coach's personal convenience matters more than their commitment to the program.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Coaches are held to the same attendance expectations they enforce with their athletes.",
+          "Missing practice for non-emergency personal activities during the competitive season is not acceptable.",
+          "If you are asking your athletes to sacrifice for the team, you must be willing to make the same sacrifice.",
+          "Attendance double standards will be addressed through the same disciplinary process applied to athlete attendance violations.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "5.3  CHANGING PRACTICE TIMES FOR PERSONAL CONVENIENCE",
+      },
+      {
+        type: "body",
+        text: "Practice schedules are set by program leadership and communicated to athletes and families in advance. Coaches do not have the authority to unilaterally change, shorten, cancel, or reschedule practice times for their own convenience or personal benefit.",
+      },
+      {
+        type: "body",
+        text: "Why this violates our culture: Our Partnership value is explicit — we are partners to our athletes, their families, and the entire Cheer Florida staff. Families build their schedules around our practice times. Parents arrange transportation, childcare, and work commitments based on the times we publish. When a coach changes practice times without authorization, they are not just being inconvenient — they are communicating that their personal schedule is more important than the commitments of every family in the program. That is not partnership. That is the opposite of it.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "All practice schedule changes must be approved by the All-Star Director before any communication goes out to athletes or families.",
+          "Coaches may not end practice early, start late, or cancel sessions without explicit leadership approval.",
+          "Unauthorized schedule changes will result in a formal write-up and a financial penalty as outlined in the Bonus & Penalty Structure.",
+          "Repeated violations will be treated as a breach of professional standards and may result in reassignment or termination.",
+        ],
+      },
+    ],
+  },
+  {
+    num: "06",
     title: "PRACTICE PLANNING & SYSTEMS",
     sub: "Practice Plans, End of Day Reports & Non-Negotiable Systems",
     content: [
       {
         type: "section_label",
-        text: "5.1  PRACTICE PLAN REQUIREMENTS",
+        text: "6.1  PRACTICE PLAN REQUIREMENTS",
       },
       {
         type: "body",
@@ -298,7 +372,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "5.2  THE THREE PILLARS OF PRACTICE PLANNING",
+        text: "6.2  THE THREE PILLARS OF PRACTICE PLANNING",
       },
       {
         type: "body",
@@ -314,7 +388,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "5.3  END OF DAY (EOD) REPORT",
+        text: "6.3  END OF DAY (EOD) REPORT",
       },
       {
         type: "body",
@@ -339,7 +413,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
     ],
   },
   {
-    num: "06",
+    num: "07",
     title: "DAILY PRACTICE SYSTEMS",
     sub: "Non-Negotiable Systems That Must Be Executed at Every Practice",
     content: [
@@ -349,7 +423,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "6.1  H.I.I.T. WARM-UP SYSTEM",
+        text: "7.1  H.I.I.T. WARM-UP SYSTEM",
       },
       {
         type: "body",
@@ -367,7 +441,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "6.2  GENERAL STRETCH / FLYER STRETCH SYSTEM",
+        text: "7.2  GENERAL STRETCH / FLYER STRETCH SYSTEM",
       },
       {
         type: "body",
@@ -385,7 +459,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "6.3  DAILY TUMBLING DRILL SYSTEM",
+        text: "7.3  DAILY TUMBLING DRILL SYSTEM",
       },
       {
         type: "body",
@@ -404,7 +478,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "6.4  JUMP SYSTEM",
+        text: "7.4  JUMP SYSTEM",
       },
       {
         type: "body",
@@ -466,7 +540,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "6.5  THEMED PRACTICES",
+        text: "7.5  THEMED PRACTICES",
       },
       {
         type: "body",
@@ -475,13 +549,13 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
     ],
   },
   {
-    num: "07",
+    num: "08",
     title: "ATHLETE ATTENDANCE & TEAM MANAGEMENT",
     sub: "Tracking, Communication & Team Culture",
     content: [
       {
         type: "section_label",
-        text: "7.1  ATHLETE ATTENDANCE TRACKING",
+        text: "8.1  ATHLETE ATTENDANCE TRACKING",
       },
       {
         type: "body",
@@ -499,7 +573,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "7.2  ATHLETE ABSENCE PROCEDURES",
+        text: "8.2  ATHLETE ABSENCE PROCEDURES",
       },
       {
         type: "bullet",
@@ -513,7 +587,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "7.3  TEAM BONDING & CULTURE",
+        text: "8.3  TEAM BONDING & CULTURE",
       },
       {
         type: "body",
@@ -532,13 +606,13 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
     ],
   },
   {
-    num: "08",
+    num: "09",
     title: "PARENT COMMUNICATION",
     sub: "Standards, Expectations & Retention Strategies",
     content: [
       {
         type: "section_label",
-        text: "8.1  COMMUNICATION STANDARDS",
+        text: "9.1  COMMUNICATION STANDARDS",
       },
       {
         type: "body",
@@ -556,7 +630,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "8.2  RETENTION STRATEGIES",
+        text: "9.2  RETENTION STRATEGIES",
       },
       {
         type: "body",
@@ -575,7 +649,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "8.3  COMMUNICATION CHANNELS",
+        text: "9.3  COMMUNICATION CHANNELS",
       },
       {
         type: "bullet",
@@ -590,13 +664,13 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
     ],
   },
   {
-    num: "09",
+    num: "10",
     title: "COMPETITION PROTOCOLS & TRAVEL",
     sub: "Preparation, Day-Of Responsibilities & Travel Standards",
     content: [
       {
         type: "section_label",
-        text: "9.1  TEAM PREPAREDNESS & COMPETITION ROUTINES",
+        text: "10.1  TEAM PREPAREDNESS & COMPETITION ROUTINES",
       },
       {
         type: "body",
@@ -615,7 +689,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "9.2  COMPETITION DAY RESPONSIBILITIES",
+        text: "10.2  COMPETITION DAY RESPONSIBILITIES",
       },
       {
         type: "bullet",
@@ -630,7 +704,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "9.3  PROFESSIONAL DRESS CODE — COMPETITION DAY",
+        text: "10.3  PROFESSIONAL DRESS CODE — COMPETITION DAY",
       },
       {
         type: "body",
@@ -650,7 +724,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "9.4  TRAVEL POLICY",
+        text: "10.4  TRAVEL POLICY",
       },
       {
         type: "bullet",
@@ -666,13 +740,13 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
     ],
   },
   {
-    num: "10",
+    num: "11",
     title: "ATTENDANCE, PUNCTUALITY & TIME OFF",
     sub: "Coach Attendance Standards & Time Off Request Process",
     content: [
       {
         type: "section_label",
-        text: "10.1  ATTENDANCE & PUNCTUALITY STANDARDS",
+        text: "11.1  ATTENDANCE & PUNCTUALITY STANDARDS",
       },
       {
         type: "body",
@@ -699,7 +773,7 @@ Beginning with the 3rd missed submission, a $10.00 deduction will be applied for
       },
       {
         type: "section_label",
-        text: "10.2  TIME OFF REQUEST PROCESS",
+        text: "11.2  TIME OFF REQUEST PROCESS",
       },
       {
         type: "body",
@@ -740,7 +814,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "10.3  SCHEDULED GYM CLOSURES & HOLIDAYS",
+        text: "11.3  SCHEDULED GYM CLOSURES & HOLIDAYS",
       },
       {
         type: "body",
@@ -786,7 +860,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "10.4  PTO ACCRUAL POLICY",
+        text: "11.4  PTO ACCRUAL POLICY",
       },
       {
         type: "body",
@@ -814,12 +888,12 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "body",
-        text: "PTO compensation: Salaried staff are paid at their normal rate. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks (private lesson hours excluded). PTO requests must follow the Time Off Request Process outlined in Section 10.2. Blackout periods apply — PTO may not be used during competition season (November–April) or any mandatory program events. Emergency and bereavement situations are reviewed on a case-by-case basis by the All Star Director.",
+        text: "PTO compensation: Salaried staff are paid at their normal rate. Hourly staff are paid based on their average regular coaching hours from the prior 4 weeks (private lesson hours excluded). PTO requests must follow the Time Off Request Process outlined in Section 11.2. Blackout periods apply — PTO may not be used during competition season (November–April) or any mandatory program events. Emergency and bereavement situations are reviewed on a case-by-case basis by the All Star Director.",
       },
     ],
   },
   {
-    num: "11",
+    num: "12",
     title: "BONUS & PENALTY STRUCTURE",
     sub: "Financial Accountability & Performance Rewards",
     content: [
@@ -829,7 +903,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "11.1  PENALTY SCHEDULE",
+        text: "12.1  PENALTY SCHEDULE",
       },
       {
         type: "penalty_table",
@@ -898,7 +972,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "11.2  BONUS SCHEDULE",
+        text: "12.2  BONUS SCHEDULE",
       },
       {
         type: "bonus_table",
@@ -937,7 +1011,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "11.3  BONUS QUALIFICATION RULES",
+        text: "12.3  BONUS QUALIFICATION RULES",
       },
       {
         type: "bullet",
@@ -952,7 +1026,7 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "12",
+    num: "13",
     title: "SEASONAL BENCHMARKS",
     sub: "Season Timeline, Performance Expectations & Accountability",
     content: [
@@ -967,7 +1041,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "12.1  SEASON BENCHMARK TIMELINE",
+        text: "13.1  SEASON BENCHMARK TIMELINE",
       },
       {
         type: "bullet",
@@ -982,7 +1056,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "12.2  ONGOING PERFORMANCE BENCHMARKS",
+        text: "13.2  ONGOING PERFORMANCE BENCHMARKS",
       },
       {
         type: "body",
@@ -1001,7 +1075,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "12.3  BENCHMARK ACCOUNTABILITY",
+        text: "13.3  BENCHMARK ACCOUNTABILITY",
       },
       {
         type: "body",
@@ -1010,7 +1084,7 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "13",
+    num: "14",
     title: "INJURY REPORTING PROCEDURES",
     sub: "Mandatory Reporting, Documentation & Follow-Up Protocol",
     content: [
@@ -1020,7 +1094,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "13.1  IMMEDIATE RESPONSE PROTOCOL",
+        text: "14.1  IMMEDIATE RESPONSE PROTOCOL",
       },
       {
         type: "steps",
@@ -1057,7 +1131,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "13.2  CONCUSSION PROTOCOL",
+        text: "14.2  CONCUSSION PROTOCOL",
       },
       {
         type: "body",
@@ -1065,7 +1139,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "13.3  INJURY REPORT FORM — REQUIRED INFORMATION",
+        text: "14.3  INJURY REPORT FORM — REQUIRED INFORMATION",
       },
       {
         type: "bullet",
@@ -1085,13 +1159,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "14",
+    num: "15",
     title: "CELL PHONE POLICY",
     sub: "Usage Standards, Violations & Photography Guidelines",
     content: [
       {
         type: "section_label",
-        text: "14.1  COACH CELL PHONE USAGE",
+        text: "15.1  COACH CELL PHONE USAGE",
       },
       {
         type: "body",
@@ -1108,7 +1182,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "14.2  ATHLETE CELL PHONE POLICY",
+        text: "15.2  ATHLETE CELL PHONE POLICY",
       },
       {
         type: "bullet",
@@ -1121,7 +1195,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "14.3  PHOTOGRAPHY & VIDEO STANDARDS",
+        text: "15.3  PHOTOGRAPHY & VIDEO STANDARDS",
       },
       {
         type: "bullet",
@@ -1136,13 +1210,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "15",
+    num: "16",
     title: "SOCIAL MEDIA POLICY",
     sub: "Standards, Posting Guidelines & Violations",
     content: [
       {
         type: "section_label",
-        text: "15.1  GENERAL SOCIAL MEDIA STANDARDS",
+        text: "16.1  GENERAL SOCIAL MEDIA STANDARDS",
       },
       {
         type: "body",
@@ -1161,7 +1235,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "15.2  POSTING MINORS",
+        text: "16.2  POSTING MINORS",
       },
       {
         type: "bullet",
@@ -1174,7 +1248,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "15.3  PROGRAM SOCIAL MEDIA ASSIGNMENTS",
+        text: "16.3  PROGRAM SOCIAL MEDIA ASSIGNMENTS",
       },
       {
         type: "body",
@@ -1183,13 +1257,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "16",
+    num: "17",
     title: "SEXUAL ABUSE & MISCONDUCT PREVENTION",
     sub: "Zero Tolerance Policy, Mandatory Reporting & Safe Sport",
     content: [
       {
         type: "section_label",
-        text: "16.1  ZERO TOLERANCE POLICY",
+        text: "17.1  ZERO TOLERANCE POLICY",
       },
       {
         type: "body",
@@ -1207,7 +1281,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "16.2  MANDATORY REPORTING OBLIGATIONS",
+        text: "17.2  MANDATORY REPORTING OBLIGATIONS",
       },
       {
         type: "body",
@@ -1226,7 +1300,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "16.3  SAFE SPORT GUIDELINES",
+        text: "17.3  SAFE SPORT GUIDELINES",
       },
       {
         type: "bullet",
@@ -1241,13 +1315,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "17",
+    num: "18",
     title: "SEXUAL HARASSMENT POLICY",
     sub: "Definition, Prohibited Conduct & Reporting Procedure",
     content: [
       {
         type: "section_label",
-        text: "17.1  POLICY STATEMENT",
+        text: "18.1  POLICY STATEMENT",
       },
       {
         type: "body",
@@ -1255,7 +1329,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "17.2  DEFINITION OF SEXUAL HARASSMENT",
+        text: "18.2  DEFINITION OF SEXUAL HARASSMENT",
       },
       {
         type: "body",
@@ -1271,7 +1345,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "17.3  PROHIBITED CONDUCT",
+        text: "18.3  PROHIBITED CONDUCT",
       },
       {
         type: "bullet",
@@ -1287,7 +1361,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "17.4  REPORTING PROCEDURE",
+        text: "18.4  REPORTING PROCEDURE",
       },
       {
         type: "steps",
@@ -1317,13 +1391,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "18",
+    num: "19",
     title: "ANTI-DISCRIMINATION POLICY",
     sub: "Equal Treatment, Protected Classes & Inclusion",
     content: [
       {
         type: "section_label",
-        text: "18.1  NON-DISCRIMINATION STATEMENT",
+        text: "19.1  NON-DISCRIMINATION STATEMENT",
       },
       {
         type: "body",
@@ -1331,7 +1405,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "18.2  PROHIBITED CONDUCT",
+        text: "19.2  PROHIBITED CONDUCT",
       },
       {
         type: "bullet",
@@ -1345,7 +1419,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "18.3  INCLUSION COMMITMENT",
+        text: "19.3  INCLUSION COMMITMENT",
       },
       {
         type: "body",
@@ -1354,13 +1428,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "19",
+    num: "20",
     title: "NON-DISCLOSURE & CONFIDENTIALITY",
     sub: "Confidential Information, Obligations & Consequences",
     content: [
       {
         type: "section_label",
-        text: "19.1  CONFIDENTIAL INFORMATION",
+        text: "20.1  CONFIDENTIAL INFORMATION",
       },
       {
         type: "body",
@@ -1379,7 +1453,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "19.2  CONFIDENTIALITY OBLIGATIONS",
+        text: "20.2  CONFIDENTIALITY OBLIGATIONS",
       },
       {
         type: "bullet",
@@ -1393,13 +1467,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "20",
+    num: "21",
     title: "PRIVATE LESSON POLICY",
     sub: "Authorization, Rates, Scheduling & Eligibility",
     content: [
       {
         type: "section_label",
-        text: "20.1  AUTHORIZATION REQUIREMENTS",
+        text: "21.1  AUTHORIZATION REQUIREMENTS",
       },
       {
         type: "body",
@@ -1417,7 +1491,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "20.2  RATES & COMPENSATION",
+        text: "21.2  RATES & COMPENSATION",
       },
       {
         type: "bullet",
@@ -1430,7 +1504,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "20.3  CONDUCT & VIOLATIONS",
+        text: "21.3  CONDUCT & VIOLATIONS",
       },
       {
         type: "bullet",
@@ -1444,13 +1518,13 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "21",
+    num: "22",
     title: "EMPLOYMENT TERMINATION",
     sub: "Types of Termination, At-Will Employment & Return of Property",
     content: [
       {
         type: "section_label",
-        text: "21.1  AT-WILL EMPLOYMENT",
+        text: "22.1  AT-WILL EMPLOYMENT",
       },
       {
         type: "body",
@@ -1458,7 +1532,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "21.2  GROUNDS FOR IMMEDIATE TERMINATION",
+        text: "22.2  GROUNDS FOR IMMEDIATE TERMINATION",
       },
       {
         type: "body",
@@ -1479,7 +1553,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "21.3  RETURN OF PROPERTY",
+        text: "22.3  RETURN OF PROPERTY",
       },
       {
         type: "body",
@@ -1488,7 +1562,7 @@ Time off is not considered approved until it has passed through all three levels
     ],
   },
   {
-    num: "22",
+    num: "23",
     title: "ACKNOWLEDGMENT & SIGNATURE",
     sub: "Staff Acknowledgment of Receipt and Understanding",
     content: [
