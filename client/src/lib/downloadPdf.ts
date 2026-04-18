@@ -17,7 +17,14 @@ const MARGIN_L = 18;
 const MARGIN_R = 18;
 const CONTENT_W = PAGE_W - MARGIN_L - MARGIN_R;
 const BODY_BOTTOM = PAGE_H - 18; // usable bottom edge (above footer)
-const SECTION_HEADER_H = 35; // height needed to draw a section heading block
+
+// Minimum height needed for a section heading + at least one line of content
+// so we never orphan a section title at the bottom of a page
+const SECTION_HEADER_H = 55;
+
+// Minimum space required after a section_label before we allow it to render
+// (prevents subsection titles orphaned from their content)
+const LABEL_MIN_FOLLOWING = 30;
 
 function addPageHeader(doc: jsPDF, sectionNum: string, sectionTitle: string) {
   doc.setFillColor(...NAVY);
@@ -60,13 +67,35 @@ function newPage(doc: jsPDF, sectionNum: string, sectionTitle: string): number {
   return 28;
 }
 
-function wrapText(doc: jsPDF, text: string, maxWidth: number, fontSize: number): string[] {
-  doc.setFontSize(fontSize);
-  return doc.splitTextToSize(text, maxWidth);
+async function loadImageAsDataURL(url: string): Promise<string> {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    img.crossOrigin = "anonymous";
+    img.onload = () => {
+      const canvas = document.createElement("canvas");
+      canvas.width = img.naturalWidth;
+      canvas.height = img.naturalHeight;
+      const ctx = canvas.getContext("2d")!;
+      ctx.drawImage(img, 0, 0);
+      resolve(canvas.toDataURL("image/png"));
+    };
+    img.onerror = reject;
+    img.src = url;
+  });
 }
 
 export async function downloadManualPdf(onProgress?: (pct: number) => void) {
   const doc = new jsPDF({ unit: "mm", format: "a4", orientation: "portrait" });
+
+  // Load CFA logo
+  let logoDataUrl: string | null = null;
+  try {
+    logoDataUrl = await loadImageAsDataURL(
+      "https://d2xsxph8kpxj0f.cloudfront.net/310519663270045816/N4rgkrRwWxtgy5x7UFcaiD/cfa-logo_508dfd17.png"
+    );
+  } catch {
+    logoDataUrl = null;
+  }
 
   // ── Cover Page ────────────────────────────────────────────────────────────
   doc.setFillColor(...NAVY);
@@ -74,53 +103,59 @@ export async function downloadManualPdf(onProgress?: (pct: number) => void) {
 
   // Top red stripe
   doc.setFillColor(...RED);
-  doc.rect(0, 0, PAGE_W, 6, "F");
+  doc.rect(0, 0, PAGE_W, 5, "F");
 
   // Bottom red stripe
   doc.setFillColor(...RED);
-  doc.rect(0, PAGE_H - 6, PAGE_W, 6, "F");
+  doc.rect(0, PAGE_H - 5, PAGE_W, 5, "F");
 
-  // Horizontal divider line
+  // Horizontal divider line — at 60% height
   doc.setFillColor(...RED);
-  doc.rect(0, PAGE_H * 0.58, PAGE_W, 2.5, "F");
+  doc.rect(0, PAGE_H * 0.60, PAGE_W, 2, "F");
 
-  // "CHEER FLORIDA" wordmark top-left
+  // CFA Logo — top-left, generous padding from top stripe
+  if (logoDataUrl) {
+    // Logo is wide (approx 3:1 ratio) — render at 80mm wide
+    const logoW = 80;
+    const logoH = 27; // ~1:3 ratio
+    doc.addImage(logoDataUrl, "PNG", MARGIN_L, 14, logoW, logoH);
+  } else {
+    // Fallback text wordmark
+    doc.setFont("helvetica", "bold");
+    doc.setFontSize(14);
+    doc.setTextColor(...WHITE);
+    doc.text("CHEER FLORIDA", MARGIN_L, 26);
+    doc.setFont("helvetica", "normal");
+    doc.setFontSize(7);
+    doc.setTextColor(180, 190, 210);
+    doc.text("EST. 1998", MARGIN_L, 32);
+  }
+
+  // Large title block — left aligned, vertically centered in upper half
   doc.setFont("helvetica", "bold");
-  doc.setFontSize(11);
+  doc.setFontSize(46);
   doc.setTextColor(...WHITE);
-  doc.text("CHEER FLORIDA", MARGIN_L, 20);
+  doc.text("STAFF", MARGIN_L, 110);
+  doc.text("OPERATIONS", MARGIN_L, 133);
+  doc.text("MANUAL", MARGIN_L, 156);
 
-  // EST. 1998 tag
-  doc.setFont("helvetica", "normal");
-  doc.setFontSize(7);
-  doc.setTextColor(180, 190, 210);
-  doc.text("EST. 1998", MARGIN_L, 26);
-
-  // Large title block — left aligned, vertically centered
-  doc.setFont("helvetica", "bold");
-  doc.setFontSize(44);
-  doc.setTextColor(...WHITE);
-  doc.text("STAFF", MARGIN_L, 105);
-  doc.text("OPERATIONS", MARGIN_L, 126);
-  doc.text("MANUAL", MARGIN_L, 147);
-
-  // Subtitle below red bar
+  // Subtitle below red divider bar
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9.5);
   doc.setTextColor(180, 190, 210);
-  doc.text("CHEER FLORIDA  ·  OFFICIAL PROGRAM DOCUMENT", MARGIN_L, PAGE_H * 0.58 + 12);
+  doc.text("CHEER FLORIDA  ·  OFFICIAL PROGRAM DOCUMENT", MARGIN_L, PAGE_H * 0.60 + 13);
 
   // #GETAGRIP
   doc.setFont("helvetica", "bold");
-  doc.setFontSize(12);
+  doc.setFontSize(13);
   doc.setTextColor(...RED);
-  doc.text("#GETAGRIP", MARGIN_L, PAGE_H * 0.58 + 24);
+  doc.text("#GETAGRIP", MARGIN_L, PAGE_H * 0.60 + 26);
 
   // Confidential notice
   doc.setFont("helvetica", "normal");
   doc.setFontSize(7.5);
-  doc.setTextColor(120, 130, 155);
-  doc.text("CONFIDENTIAL — FOR CHEER FLORIDA COACHING STAFF ONLY", MARGIN_L, PAGE_H - 14);
+  doc.setTextColor(100, 110, 140);
+  doc.text("CONFIDENTIAL — FOR CHEER FLORIDA COACHING STAFF ONLY", MARGIN_L, PAGE_H - 12);
 
   addPageFooter(doc);
 
@@ -136,7 +171,6 @@ export async function downloadManualPdf(onProgress?: (pct: number) => void) {
   doc.setFillColor(...RED);
   doc.rect(MARGIN_L, 37, 14, 1.5, "F");
 
-  // Tighter row height (8mm) so all 24 entries fit on 2 pages
   const TOC_ROW_H = 8;
   let tocY = 46;
 
@@ -176,7 +210,6 @@ export async function downloadManualPdf(onProgress?: (pct: number) => void) {
   let currentSection = "00";
   let currentSectionTitle = "CHEER FLORIDA STAFF OPERATIONS MANUAL";
 
-  // Track current y across sections — start fresh on a new page only when needed
   let y = BODY_BOTTOM; // force a new page for the first section
 
   for (let si = 0; si < SECTIONS.length; si++) {
@@ -186,41 +219,34 @@ export async function downloadManualPdf(onProgress?: (pct: number) => void) {
 
     if (onProgress) onProgress(Math.round((si / totalSections) * 90) + 5);
 
-    // Start new page if not enough room for section header + at least one block
-    if (y + SECTION_HEADER_H > BODY_BOTTOM) {
-      y = newPage(doc, currentSection, currentSectionTitle);
-    } else {
-      // Continue on same page — update the header to reflect new section
-      addPageHeader(doc, currentSection, currentSectionTitle);
-      // Add a visual divider between sections on the same page
-      doc.setFillColor(...NAVY);
-      doc.rect(MARGIN_L, y, CONTENT_W, 0.5, "F");
-      y += 6;
-    }
+    // Always start a new page for each section — this prevents section bleed
+    // (e.g., 4.3 ending on a page and Section 5 starting on the same page
+    // with its content continuing on the next)
+    y = newPage(doc, currentSection, currentSectionTitle);
 
-    // Section heading block
+    // Section heading block — with proper spacing between label and title
     doc.setFont("helvetica", "bold");
-    doc.setFontSize(7);
+    doc.setFontSize(7.5);
     doc.setTextColor(...RED);
     doc.text(`SECTION ${section.num}`, MARGIN_L, y);
-    y += 5;
+    y += 8; // <-- increased gap between "SECTION XX" label and the big title
 
     doc.setFont("helvetica", "bold");
     doc.setFontSize(18);
     doc.setTextColor(...NAVY);
     const titleLines = doc.splitTextToSize(section.title, CONTENT_W);
     doc.text(titleLines, MARGIN_L, y);
-    y += titleLines.length * 7 + 1;
+    y += titleLines.length * 8 + 2;
 
     doc.setFont("helvetica", "normal");
     doc.setFontSize(8.5);
     doc.setTextColor(...MID_GRAY);
     doc.text(section.sub, MARGIN_L, y);
-    y += 4;
+    y += 5;
 
     doc.setFillColor(...RED);
     doc.rect(MARGIN_L, y, 12, 1.2, "F");
-    y += 7;
+    y += 9;
 
     // Content blocks
     for (const block of section.content) {
@@ -298,58 +324,65 @@ function renderBlock(
 
   switch (block.type) {
     case "body": {
-      const lines = wrapText(doc, block.text, CONTENT_W, 9.5);
-      y = checkPage(lines.length * 5 + 4);
+      // Always use helvetica normal — never courier/monospace
+      doc.setFont("helvetica", "normal");
+      doc.setFontSize(9.5);
+      const lines = doc.splitTextToSize(block.text, CONTENT_W);
+      y = checkPage(lines.length * 5.5 + 4);
       doc.setFont("helvetica", "normal");
       doc.setFontSize(9.5);
       doc.setTextColor(...DARK);
       doc.text(lines, MARGIN_L, y);
-      y += lines.length * 5 + 4;
+      y += lines.length * 5.5 + 4;
       break;
     }
 
     case "italic_intro": {
-      const lines = wrapText(doc, block.text, CONTENT_W - 8, 9);
-      y = checkPage(lines.length * 5 + 8);
+      doc.setFont("helvetica", "italic");
+      doc.setFontSize(9);
+      const lines = doc.splitTextToSize(block.text, CONTENT_W - 8);
+      y = checkPage(lines.length * 5.5 + 10);
       doc.setFillColor(245, 245, 248);
-      doc.rect(MARGIN_L, y - 3, CONTENT_W, lines.length * 5 + 7, "F");
+      doc.rect(MARGIN_L, y - 3, CONTENT_W, lines.length * 5.5 + 8, "F");
       doc.setDrawColor(...RED);
       doc.setLineWidth(0.8);
-      doc.line(MARGIN_L, y - 3, MARGIN_L, y + lines.length * 5 + 4);
+      doc.line(MARGIN_L, y - 3, MARGIN_L, y + lines.length * 5.5 + 5);
       doc.setFont("helvetica", "italic");
       doc.setFontSize(9);
       doc.setTextColor(60, 70, 90);
       doc.text(lines, MARGIN_L + 5, y);
-      y += lines.length * 5 + 10;
+      y += lines.length * 5.5 + 12;
       break;
     }
 
     case "section_label": {
-      // Prevent orphan: ensure at least 20mm of content space after the label
-      y = checkPage(20);
+      // Prevent orphan: require LABEL_MIN_FOLLOWING mm of space after label
+      y = checkPage(LABEL_MIN_FOLLOWING);
       doc.setFont("helvetica", "bold");
-      doc.setFontSize(8);
+      doc.setFontSize(8.5);
       doc.setTextColor(...RED);
       doc.text(block.text.toUpperCase(), MARGIN_L, y);
-      y += 2;
+      y += 2.5;
       doc.setDrawColor(...RED);
       doc.setLineWidth(0.5);
-      doc.line(MARGIN_L, y, MARGIN_L + 30, y);
-      y += 5;
+      doc.line(MARGIN_L, y, MARGIN_L + 32, y);
+      y += 6;
       break;
     }
 
     case "bullet": {
       for (const item of block.items) {
-        const lines = wrapText(doc, item, CONTENT_W - 8, 9);
-        y = checkPage(lines.length * 5 + 2);
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(9);
+        const lines = doc.splitTextToSize(item, CONTENT_W - 9);
+        y = checkPage(lines.length * 5.5 + 3);
         doc.setFillColor(...RED);
         doc.rect(MARGIN_L + 1, y - 2, 2.5, 2.5, "F");
         doc.setFont("helvetica", "normal");
         doc.setFontSize(9);
         doc.setTextColor(...DARK);
         doc.text(lines, MARGIN_L + 7, y);
-        y += lines.length * 5 + 1;
+        y += lines.length * 5.5 + 1.5;
       }
       y += 3;
       break;
@@ -357,8 +390,10 @@ function renderBlock(
 
     case "numbered": {
       block.items.forEach((item, i) => {
-        const lines = wrapText(doc, item, CONTENT_W - 10, 9);
-        y = checkPage(lines.length * 5 + 2);
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(9);
+        const lines = doc.splitTextToSize(item, CONTENT_W - 11);
+        y = checkPage(lines.length * 5.5 + 3);
         doc.setFont("helvetica", "bold");
         doc.setFontSize(8.5);
         doc.setTextColor(...NAVY);
@@ -367,16 +402,16 @@ function renderBlock(
         doc.setFontSize(9);
         doc.setTextColor(...DARK);
         doc.text(lines, MARGIN_L + 9, y);
-        y += lines.length * 5 + 1;
+        y += lines.length * 5.5 + 1.5;
       });
       y += 3;
       break;
     }
 
     case "link": {
-      y = checkPage(12);
+      y = checkPage(13);
       doc.setFillColor(240, 242, 248);
-      doc.rect(MARGIN_L, y - 3, CONTENT_W, 11, "F");
+      doc.rect(MARGIN_L, y - 3, CONTENT_W, 12, "F");
       doc.setFont("helvetica", "bold");
       doc.setFontSize(8.5);
       doc.setTextColor(...RED);
@@ -384,14 +419,14 @@ function renderBlock(
       doc.setFont("helvetica", "normal");
       doc.setFontSize(7.5);
       doc.setTextColor(80, 100, 160);
-      doc.text(block.url, MARGIN_L + 4, y + 6);
-      y += 14;
+      doc.text(block.url, MARGIN_L + 4, y + 7);
+      y += 15;
       break;
     }
 
     case "grip_cards": {
       const cardW = (CONTENT_W - 6) / 4;
-      const cardH = 50;
+      const cardH = 52;
       y = checkPage(cardH + 6);
       block.cards.forEach((card, i) => {
         const cx = MARGIN_L + i * (cardW + 2);
@@ -411,10 +446,10 @@ function renderBlock(
         doc.setFillColor(...RED);
         doc.rect(cx + 4, y + 22, 10, 0.8, "F");
 
-        const descLines = doc.splitTextToSize(card.desc, cardW - 8);
         doc.setFont("helvetica", "normal");
         doc.setFontSize(7);
         doc.setTextColor(60, 70, 90);
+        const descLines = doc.splitTextToSize(card.desc, cardW - 8);
         doc.text(descLines.slice(0, 6), cx + 4, y + 27);
       });
       y += cardH + 8;
@@ -425,8 +460,11 @@ function renderBlock(
     case "bonus_table": {
       const isBonus = block.type === "bonus_table";
       const rowH = 9;
+      const amtColW = 26;
       const descColW = 52;
-      const notesColW = CONTENT_W - 28 - descColW - 4;
+      const notesColW = CONTENT_W - amtColW - descColW - 4;
+      const descX = MARGIN_L + amtColW + 2;
+      const notesX = descX + descColW + 2;
 
       // Header
       y = checkPage(rowH + 4);
@@ -436,32 +474,32 @@ function renderBlock(
       doc.setFontSize(7.5);
       doc.setTextColor(...WHITE);
       doc.text("AMOUNT", MARGIN_L + 2, y + 6);
-      doc.text("DESCRIPTION", MARGIN_L + 30, y + 6);
-      doc.text("NOTES / QUALIFICATIONS", MARGIN_L + 30 + descColW + 2, y + 6);
+      doc.text("DESCRIPTION", descX, y + 6);
+      doc.text("NOTES / QUALIFICATIONS", notesX, y + 6);
       y += rowH;
 
       block.rows.forEach((row, i) => {
-        // Wrap description and notes to calculate actual row height
+        doc.setFont("helvetica", "normal");
         doc.setFontSize(7.5);
-        const descLines = doc.splitTextToSize(row.description, descColW);
-        const notesLines = doc.splitTextToSize(row.notes, notesColW);
+        const descLines = doc.splitTextToSize(row.description, descColW - 2);
+        const notesLines = doc.splitTextToSize(row.notes, notesColW - 2);
         const maxLines = Math.max(descLines.length, notesLines.length, 1);
-        const thisRowH = maxLines * 4.5 + 4;
+        const thisRowH = maxLines * 4.5 + 5;
 
         if (y + thisRowH > BODY_BOTTOM) {
           addPageFooter(doc);
           doc.addPage();
           addPageHeader(doc, sectionNum, sectionTitle);
           y = 28;
-          // Repeat header
+          // Repeat header on new page
           doc.setFillColor(...NAVY);
           doc.rect(MARGIN_L, y, CONTENT_W, rowH, "F");
           doc.setFont("helvetica", "bold");
           doc.setFontSize(7.5);
           doc.setTextColor(...WHITE);
           doc.text("AMOUNT", MARGIN_L + 2, y + 6);
-          doc.text("DESCRIPTION", MARGIN_L + 30, y + 6);
-          doc.text("NOTES / QUALIFICATIONS", MARGIN_L + 30 + descColW + 2, y + 6);
+          doc.text("DESCRIPTION", descX, y + 6);
+          doc.text("NOTES / QUALIFICATIONS", notesX, y + 6);
           y += rowH;
         }
 
@@ -478,12 +516,12 @@ function renderBlock(
         doc.setFont("helvetica", "bold");
         doc.setFontSize(7.5);
         doc.setTextColor(...NAVY);
-        doc.text(descLines, MARGIN_L + 30, y + 5);
+        doc.text(descLines, descX, y + 5);
 
         doc.setFont("helvetica", "normal");
         doc.setFontSize(7);
         doc.setTextColor(...DARK);
-        doc.text(notesLines, MARGIN_L + 30 + descColW + 2, y + 5);
+        doc.text(notesLines, notesX, y + 5);
 
         y += thisRowH;
       });
@@ -493,8 +531,10 @@ function renderBlock(
 
     case "steps": {
       for (const step of block.items) {
-        const descLines = wrapText(doc, step.desc, CONTENT_W - 16, 9);
-        const stepH = descLines.length * 5 + 12;
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(9);
+        const descLines = doc.splitTextToSize(step.desc, CONTENT_W - 16);
+        const stepH = descLines.length * 5.5 + 13;
         y = checkPage(stepH);
 
         doc.setFillColor(240, 242, 248);
@@ -510,7 +550,7 @@ function renderBlock(
         doc.setFont("helvetica", "normal");
         doc.setFontSize(9);
         doc.setTextColor(...DARK);
-        doc.text(descLines, MARGIN_L + 8, y + 11);
+        doc.text(descLines, MARGIN_L + 8, y + 12);
 
         y += stepH + 3;
       }
@@ -519,7 +559,6 @@ function renderBlock(
     }
 
     case "comp_table": {
-      // Columns: Team | Division | Placement | Field | Day1 | Day2 | Final
       const colX = [MARGIN_L, MARGIN_L + 34, MARGIN_L + 80, MARGIN_L + 104, MARGIN_L + 120, MARGIN_L + 138, MARGIN_L + 156];
       const colW = [32, 44, 22, 14, 16, 16, 18];
       const rowH = 7;
@@ -530,8 +569,9 @@ function renderBlock(
       doc.setFont("helvetica", "bold");
       doc.setFontSize(6.5);
       doc.setTextColor(...WHITE);
-      const headers = ["TEAM", "DIVISION", "PLACEMENT", "FIELD", "DAY 1", "DAY 2", "FINAL"];
-      headers.forEach((h, i) => doc.text(h, colX[i] + 1, y + 5));
+      ["TEAM", "DIVISION", "PLACEMENT", "FIELD", "DAY 1", "DAY 2", "FINAL"].forEach((h, i) =>
+        doc.text(h, colX[i] + 1, y + 5)
+      );
       y += rowH;
 
       block.rows.forEach((row, i) => {
@@ -573,7 +613,6 @@ function renderBlock(
     }
 
     case "comp_table_placement": {
-      // Columns: Team | Division | Placement | Field Size
       const colX = [MARGIN_L, MARGIN_L + 40, MARGIN_L + 110, MARGIN_L + 140];
       const colW = [38, 68, 28, 24];
       const rowH = 7;
@@ -584,7 +623,9 @@ function renderBlock(
       doc.setFont("helvetica", "bold");
       doc.setFontSize(6.5);
       doc.setTextColor(...WHITE);
-      ["TEAM", "DIVISION", "PLACEMENT", "FIELD SIZE"].forEach((h, i) => doc.text(h, colX[i] + 1, y + 5));
+      ["TEAM", "DIVISION", "PLACEMENT", "FIELD SIZE"].forEach((h, i) =>
+        doc.text(h, colX[i] + 1, y + 5)
+      );
       y += rowH;
 
       block.rows.forEach((row, i) => {
@@ -616,7 +657,6 @@ function renderBlock(
     }
 
     case "priority_table": {
-      // Columns: Rank | Team | Win Pts | Major | Regular | Avg % | Avg Score
       const colX = [MARGIN_L, MARGIN_L + 14, MARGIN_L + 52, MARGIN_L + 72, MARGIN_L + 92, MARGIN_L + 116, MARGIN_L + 148];
       const rowH = 7;
 
@@ -643,7 +683,6 @@ function renderBlock(
           doc.rect(MARGIN_L, y, CONTENT_W, rowH, "F");
         }
 
-        // Rank badge
         doc.setFillColor(...RED);
         doc.rect(colX[0] + 1, y + 1, 8, 5, "F");
         doc.setFont("helvetica", "bold");
