@@ -55,6 +55,21 @@ export interface StepList {
   items: { title: string; desc: string }[];
 }
 
+export interface CompTable {
+  type: "comp_table";
+  rows: { team: string; division: string; placement: string; field: number; day1: string; day2: string; fs: string }[];
+}
+
+export interface CompTablePlacement {
+  type: "comp_table_placement";
+  rows: { team: string; division: string; placement: string; field: number }[];
+}
+
+export interface PriorityTable {
+  type: "priority_table";
+  rows: { rank: number; team: string; win_pts: number; major_wins: number; regular_wins: number; avg_pct: string; avg_score: string }[];
+}
+
 export type ContentBlock =
   | BulletItem
   | NumberedItem
@@ -66,7 +81,10 @@ export type ContentBlock =
   | GripCards
   | PenaltyTable
   | BonusTable
-  | StepList;
+  | StepList
+  | CompTable
+  | CompTablePlacement
+  | PriorityTable;
 
 export interface ManualSection {
   num: string;
@@ -1632,6 +1650,248 @@ Time off is not considered approved until it has passed through all three levels
       {
         type: "body",
         text: "I understand that this manual does not constitute a contract of employment and that my employment remains at-will.",
+      },
+    ],
+  },
+  {
+    num: "24",
+    title: "CHOREOGRAPHER & MUSIC PRIORITY SYSTEM",
+    sub: "Data-Driven Resource Allocation Based on Competitive Performance",
+    content: [
+      {
+        type: "italic_intro",
+        text: "Access to choreographers and music production is one of the most valuable resources Cheer Florida provides to its teams. These resources directly impact competitive performance — and they are not unlimited. When multiple teams need access to the same choreographer or the same recording window, a decision must be made about who goes first. This system ensures that decision is made by data, not by relationships, volume, or emotion.",
+      },
+      {
+        type: "section_label",
+        text: "24.1  WHY THIS SYSTEM EXISTS",
+      },
+      {
+        type: "body",
+        text: "In the absence of a clear, documented process, resource allocation decisions become subjective. Coaches feel overlooked. Families question the process. Leadership is forced to defend choices that were never clearly defined. That creates resentment, and resentment erodes culture.",
+      },
+      {
+        type: "body",
+        text: "This system eliminates that entirely. Priority is determined by one thing only: what your team has proven on the competition floor. The data is public, the formula is documented, and the rankings are recalculated every season on May 10th. If you want to move up the list, compete better. This is what Integrity looks like in practice.",
+      },
+      {
+        type: "section_label",
+        text: "24.2  HOW THE PRIORITY SCORE IS CALCULATED",
+      },
+      {
+        type: "body",
+        text: "Every eligible elite team receives a Priority Score based on three factors, applied in order as tiebreakers. The team with the highest score on Factor 1 ranks first. If two teams are tied on Factor 1, Factor 2 breaks the tie. If still tied, Factor 3 is used.",
+      },
+      {
+        type: "section_label",
+        text: "FACTOR 1 — WIN POINTS (Primary)",
+      },
+      {
+        type: "body",
+        text: "A win is defined as a 1st place finish at a sanctioned competition. However, not all wins are equal. Cheer Florida competes at five events per season, and three of those events — Jamfest, Cheersport, and UCA — are recognized as major national competitions with significantly larger and more competitive fields. Winning at a major carries more weight than winning at a regional event.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Major Win (Jamfest, Cheersport, UCA) = 2 Win Points",
+          "Regular Win (Spirit Sports ORL, Spirit Cheer WPB) = 1 Win Point",
+          "A team that wins Jamfest and Spirit Sports has 3 Win Points (2 + 1).",
+          "A team that wins Spirit Sports and Spirit Cheer WPB has 2 Win Points (1 + 1).",
+          "Win Points are the first and most important factor. No other metric can override a team with more Win Points.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "FACTOR 2 — AVERAGE PLACEMENT PERCENTILE (Tiebreaker)",
+      },
+      {
+        type: "body",
+        text: "When two teams have the same number of Win Points, we look at how they placed across all competitions relative to the size of their division. This metric exists because placement alone does not tell the full story. Finishing 2nd out of 10 teams is a fundamentally different achievement than finishing 2nd out of 2 teams — and this formula captures that difference.",
+      },
+      {
+        type: "body",
+        text: "The formula for each competition result is: ((Field Size − Placement) ÷ (Field Size − 1)) × 100. A 1st place finish in any field size always equals 100%. A last place finish always equals 0%. A team that finishes 2nd out of 10 earns 88.9%. A team that finishes 2nd out of 2 earns 0%. The Average Placement Percentile is the average of this calculation across all competitions the team attended.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Example: Serpents finished 1st/2 (100%), 2nd/9 (87.5%), 1st/10 (100%), and 2nd/7 (83.3%). Average = 92.71%.",
+          "Example: Thunderbirds finished 2nd/3 (50%), 2nd/8 (85.7%), 1st/14 (100%), 1st/2 (100%), 2nd/7 (83.3%). Average = 83.81%.",
+          "Serpents ranks above Thunderbirds in this factor because their average percentile is higher — even though both teams have the same Win Points.",
+          "This metric rewards teams that consistently perform well in large, competitive divisions.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "FACTOR 3 — AVERAGE FINAL SCORE (Last Tiebreaker)",
+      },
+      {
+        type: "body",
+        text: "If two teams are still tied after Win Points and Average Placement Percentile, Average Final Score across all scored competitions is used as the final tiebreaker. It is intentionally last — and that decision is documented here for a specific reason.",
+      },
+      {
+        type: "body",
+        text: "Scores are judged by different panels at every event. A 97.5 at Jamfest is not the same as a 97.5 at Spirit Sports. Panels vary in their calibration, their standards, and their interpretation of the rubric. Two teams can perform at the exact same level and receive different scores depending on which panel they were judged by and on which day. Using score as the primary factor would mean a team could argue their way up the list based on a single high-scoring event judged by a favorable panel. We do not allow that argument. Score is a reference point, not a verdict.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Average Final Score is calculated using only competitions where official scores were published.",
+          "Competitions 4 (Spirit Cheer WPB) and 5 (UCA) did not publish official scores and are excluded from this calculation.",
+          "Competitions 1 (Spirit Sports ORL), 2 (Jamfest), and 3 (Cheersport) are included.",
+          "The Final Score used is the official published score after all deductions have been applied.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "24.3  COMPETITION SCHEDULE & EVENT CLASSIFICATIONS",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Competition 1 — Spirit Sports ORL | Type: Regular | Win Points for 1st: 1",
+          "Competition 2 — Jamfest | Type: MAJOR | Win Points for 1st: 2",
+          "Competition 3 — Cheersport | Type: MAJOR | Win Points for 1st: 2",
+          "Competition 4 — Spirit Cheer WPB | Type: Regular | Win Points for 1st: 1",
+          "Competition 5 — UCA | Type: MAJOR | Win Points for 1st: 2",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "24.4  2025–2026 SEASON COMPETITION DATA",
+      },
+      {
+        type: "body",
+        text: "The following tables contain the raw data from all five competitions this season. Every number used in the priority calculation is sourced directly from these results. Nothing has been adjusted, weighted, or interpreted beyond the formulas documented above.",
+      },
+      {
+        type: "section_label",
+        text: "Competition 1 — Spirit Sports ORL (Regular)",
+      },
+      {
+        type: "comp_table",
+        rows: [
+          { team: "Mini Warriors", division: "L1 Mini - Medium", placement: "1 of 2", field: 2, day1: "95.6341", day2: "97.721", fs: "97.1993" },
+          { team: "Angels", division: "L1 Youth - Medium", placement: "1 of 3", field: 3, day1: "96.8841", day2: "97.029", fs: "96.9928" },
+          { team: "Hydra", division: "L1 Junior - Combined", placement: "3 of 4", field: 4, day1: "95.3768", day2: "96.5942", fs: "96.2899" },
+          { team: "Unicorns", division: "L2 Youth Flex - Med", placement: "1 of 1", field: 1, day1: "97.1333", day2: "97.8", fs: "97.6333" },
+          { team: "Shades", division: "L2 Youth Flex - Sm", placement: "2 of 2", field: 2, day1: "96.5333", day2: "96.1", fs: "96.2083" },
+          { team: "Serpents", division: "L2 Junior - Combined", placement: "1 of 2", field: 2, day1: "98.2", day2: "98.8667", fs: "98.7" },
+          { team: "Ravens", division: "L2 Senior Medium", placement: "1 of 2", field: 2, day1: "94.8667", day2: "96.9333", fs: "96.4166" },
+          { team: "Thunderbirds", division: "L3 Youth Flex", placement: "2 of 3", field: 3, day1: "96.2833", day2: "96.7333", fs: "96.6208" },
+          { team: "Sirens", division: "L3 Junior Flex", placement: "1 of 4", field: 4, day1: "96.2", day2: "98", fs: "97.55" },
+          { team: "Medusa", division: "L3 Senior - Small", placement: "1 of 3", field: 3, day1: "97.0667", day2: "97.9333", fs: "97.7166" },
+          { team: "Pheonix", division: "L4 Senior - Small", placement: "2 of 3", field: 3, day1: "95.8", day2: "97.4667", fs: "97.05" },
+        ],
+      },
+      {
+        type: "section_label",
+        text: "Competition 2 — Jamfest (MAJOR)",
+      },
+      {
+        type: "comp_table",
+        rows: [
+          { team: "Mini Warriors", division: "L1 Mini - Medium", placement: "1 of 4", field: 4, day1: "95.6522", day2: "96.7391", fs: "96.4674" },
+          { team: "Angels", division: "L1 Youth - Medium", placement: "4 of 6", field: 6, day1: "95.2174", day2: "97.1739", fs: "96.6848" },
+          { team: "Hydra", division: "L1 Junior - Med", placement: "2 of 3", field: 3, day1: "96.9862", day2: "96.471", fs: "96.5998" },
+          { team: "Unicorns", division: "L2 Youth Flex - Med", placement: "1 of 4", field: 4, day1: "97.8", day2: "98.8667", fs: "98.6" },
+          { team: "Shades", division: "L2 Youth Flex - Sm", placement: "4 of 10", field: 10, day1: "96.95", day2: "97.6667", fs: "97.4875" },
+          { team: "Serpents", division: "L2 Junior - Small", placement: "2 of 9", field: 9, day1: "93.7333", day2: "98.1333", fs: "97.0333" },
+          { team: "Ravens", division: "L2 Senior Medium", placement: "2 of 3", field: 3, day1: "94.8167", day2: "96.75", fs: "96.2667" },
+          { team: "Thunderbirds", division: "L3 Youth Flex", placement: "2 of 8", field: 8, day1: "96.3333", day2: "98.6667", fs: "98.0834" },
+          { team: "Sirens", division: "L3 Junior Flex", placement: "4 of 7", field: 7, day1: "97", day2: "97.0667", fs: "97.05" },
+          { team: "Medusa", division: "L3 Senior - Small", placement: "6 of 11", field: 11, day1: "97.0167", day2: "97.0167", fs: "97.0167" },
+          { team: "Pheonix", division: "L4 Senior - Small", placement: "3 of 7", field: 7, day1: "96.6", day2: "96.05", fs: "96.1875" },
+          { team: "Sea Warriors", division: "L6 XS", placement: "7 of 8", field: 8, day1: "92.7167", day2: "91.05", fs: "91.4667" },
+        ],
+      },
+      {
+        type: "section_label",
+        text: "Competition 3 — Cheersport (MAJOR)",
+      },
+      {
+        type: "comp_table",
+        rows: [
+          { team: "Mini Warriors", division: "L1 Mini - Medium", placement: "1 of 8", field: 8, day1: "97.1014", day2: "97.8261", fs: "97.6449" },
+          { team: "Angels", division: "L1 Youth - Medium", placement: "6 of 8", field: 8, day1: "95.5543", day2: "92.6123", fs: "94.8188" },
+          { team: "Hydra", division: "L1 Junior - Med", placement: "2 of 5", field: 5, day1: "97.721", day2: "98.2609", fs: "98.1259" },
+          { team: "Unicorns", division: "L2 Youth Flex - Med", placement: "4 of 7", field: 7, day1: "96.2667", day2: "93.3667", fs: "95.5417" },
+          { team: "Shades", division: "L2 Youth Flex - Sm", placement: "10 of 15", field: 15, day1: "95.0375", day2: "94.75", fs: "95.0375" },
+          { team: "Serpents", division: "L2 Junior - Small", placement: "1 of 10", field: 10, day1: "97.6", day2: "98.4667", fs: "98.25" },
+          { team: "Ravens", division: "L2 Senior Medium", placement: "4 of 15", field: 15, day1: "97", day2: "97.6667", fs: "97.5" },
+          { team: "Thunderbirds", division: "L3 Youth Flex", placement: "1 of 14", field: 14, day1: "97.7333", day2: "98.4", fs: "98.2333" },
+          { team: "Sirens", division: "L3 Junior Flex", placement: "1 of 11", field: 11, day1: "97.8667", day2: "97.9333", fs: "97.9166" },
+          { team: "Medusa", division: "L3 Senior - Small", placement: "4 of 9", field: 9, day1: "96.6833", day2: "97.0667", fs: "96.9709" },
+          { team: "Pheonix", division: "L4 Senior - Small", placement: "2 of 12", field: 12, day1: "97.5333", day2: "98.4667", fs: "98.2334" },
+          { team: "Sea Warriors", division: "L6 XS", placement: "14 of 18", field: 18, day1: "92.0667", day2: "91.3667", fs: "91.8917" },
+        ],
+      },
+      {
+        type: "section_label",
+        text: "Competition 4 — Spirit Cheer WPB (Regular) — Placement Only",
+      },
+      {
+        type: "comp_table_placement",
+        rows: [
+          { team: "Mini Warriors", division: "L1 Mini - Medium", placement: "1 of 1", field: 1 },
+          { team: "Angels", division: "L1 Youth - Medium", placement: "1 of 2", field: 2 },
+          { team: "Hydra", division: "L1 Junior - Combined", placement: "1 of 2", field: 2 },
+          { team: "Shades", division: "L2 Youth Flex - Sm", placement: "1 of 1", field: 1 },
+          { team: "Ravens", division: "L2 Senior Medium", placement: "1 of 1", field: 1 },
+          { team: "Thunderbirds", division: "L3 Youth Flex", placement: "1 of 2", field: 2 },
+          { team: "Sirens", division: "L3 Junior Flex", placement: "1 of 2", field: 2 },
+          { team: "Medusa", division: "L3 Senior - Small", placement: "1 of 1", field: 1 },
+          { team: "Pheonix", division: "L4 Senior - Small", placement: "1 of 1", field: 1 },
+        ],
+      },
+      {
+        type: "section_label",
+        text: "Competition 5 — UCA (MAJOR) — Placement Only",
+      },
+      {
+        type: "comp_table_placement",
+        rows: [
+          { team: "Mini Warriors", division: "L1 Mini - Medium", placement: "1 of 2", field: 2 },
+          { team: "Angels", division: "L1 Youth - Medium", placement: "2 of 4", field: 4 },
+          { team: "Hydra", division: "L1 Junior - Med", placement: "1 of 2", field: 2 },
+          { team: "Unicorns", division: "L2 Youth Flex - Med", placement: "1 of 2", field: 2 },
+          { team: "Shades", division: "L2 Youth Flex - Sm", placement: "2 of 3", field: 3 },
+          { team: "Serpents", division: "L2 Junior - Small", placement: "2 of 7", field: 7 },
+          { team: "Ravens", division: "L2 Senior Medium", placement: "2 of 3", field: 3 },
+          { team: "Thunderbirds", division: "L3 Youth Flex", placement: "2 of 7", field: 7 },
+          { team: "Sirens", division: "L3 Junior Flex", placement: "1 of 5", field: 5 },
+          { team: "Medusa", division: "L3 Senior - Small", placement: "1 of 6", field: 6 },
+          { team: "Pheonix", division: "L4 Senior - Small", placement: "2 of 6", field: 6 },
+        ],
+      },
+      {
+        type: "section_label",
+        text: "24.5  2025–2026 PRIORITY RANKINGS",
+      },
+      {
+        type: "body",
+        text: "The following rankings are the official Choreographer & Music Priority order for the 2025–2026 season. Teams are listed in the order they receive access to choreographers and music production resources. Priority #1 selects first. All subsequent teams follow in order.",
+      },
+      {
+        type: "priority_table",
+        rows: [
+          { rank: 1, team: "Mini Warriors", win_pts: 8, major_wins: 3, regular_wins: 2, avg_pct: "100.00%", avg_score: "97.10" },
+          { rank: 2, team: "Sirens", win_pts: 6, major_wins: 2, regular_wins: 2, avg_pct: "90.00%", avg_score: "97.51" },
+          { rank: 3, team: "Unicorns", win_pts: 5, major_wins: 2, regular_wins: 1, avg_pct: "87.50%", avg_score: "97.26" },
+          { rank: 4, team: "Medusa", win_pts: 4, major_wins: 1, regular_wins: 2, avg_pct: "82.50%", avg_score: "97.23" },
+          { rank: 5, team: "Serpents", win_pts: 3, major_wins: 1, regular_wins: 1, avg_pct: "92.71%", avg_score: "97.99" },
+          { rank: 6, team: "Thunderbirds", win_pts: 3, major_wins: 1, regular_wins: 1, avg_pct: "83.81%", avg_score: "97.65" },
+          { rank: 7, team: "Hydra", win_pts: 3, major_wins: 1, regular_wins: 1, avg_pct: "71.67%", avg_score: "97.01" },
+          { rank: 8, team: "Ravens", win_pts: 2, major_wins: 0, regular_wins: 2, avg_pct: "75.71%", avg_score: "96.73" },
+          { rank: 9, team: "Angels", win_pts: 2, major_wins: 0, regular_wins: 2, avg_pct: "67.05%", avg_score: "96.17" },
+          { rank: 10, team: "Pheonix", win_pts: 1, major_wins: 0, regular_wins: 1, avg_pct: "77.52%", avg_score: "97.16" },
+          { rank: 11, team: "Shades", win_pts: 1, major_wins: 0, regular_wins: 1, avg_pct: "50.48%", avg_score: "96.24" },
+          { rank: 12, team: "Sea Warriors", win_pts: 0, major_wins: 0, regular_wins: 0, avg_pct: "18.91%", avg_score: "91.68" },
+        ],
+      },
+      {
+        type: "body",
+        text: "Rankings reset annually on May 10th. Historical data from all previous seasons is preserved on file and available upon request. Prep, Novice, and non-scored exhibition teams are not included in the priority system at this time.",
       },
     ],
   },

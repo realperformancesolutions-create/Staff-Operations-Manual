@@ -196,6 +196,99 @@ function RenderBlock({ block }: { block: ContentBlock }) {
         </div>
       );
 
+    case "comp_table":
+      return (
+        <div className="mb-6 overflow-x-auto">
+          <table className="w-full text-[12.5px] border-collapse">
+            <thead>
+              <tr className="bg-[oklch(0.22_0.06_264)] text-white">
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>TEAM</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>DIVISION</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>PLACEMENT</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>FIELD SIZE</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>DAY 1</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>DAY 2</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>FINAL SCORE</th>
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? "bg-[oklch(0.97_0.002_264)]" : "bg-white"}>
+                  <td className="px-3 py-2.5 font-semibold text-[oklch(0.22_0.06_264)]">{row.team}</td>
+                  <td className="px-3 py-2.5 text-[oklch(0.35_0.01_264)]">{row.division}</td>
+                  <td className="px-3 py-2.5 font-bold text-[oklch(0.48_0.22_25)]">{row.placement}</td>
+                  <td className="px-3 py-2.5 text-center text-[oklch(0.35_0.01_264)]">{row.field}</td>
+                  <td className="px-3 py-2.5 text-[oklch(0.35_0.01_264)]">{row.day1}</td>
+                  <td className="px-3 py-2.5 text-[oklch(0.35_0.01_264)]">{row.day2}</td>
+                  <td className="px-3 py-2.5 font-bold text-[oklch(0.22_0.06_264)]">{row.fs}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
+    case "comp_table_placement":
+      return (
+        <div className="mb-6 overflow-x-auto">
+          <p className="text-[12px] italic text-[oklch(0.5_0.01_264)] mb-2">Official scores were not published for this event. Placement data only.</p>
+          <table className="w-full text-[12.5px] border-collapse">
+            <thead>
+              <tr className="bg-[oklch(0.22_0.06_264)] text-white">
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>TEAM</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>DIVISION</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>PLACEMENT</th>
+                <th className="text-left px-3 py-2.5 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>FIELD SIZE</th>
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? "bg-[oklch(0.97_0.002_264)]" : "bg-white"}>
+                  <td className="px-3 py-2.5 font-semibold text-[oklch(0.22_0.06_264)]">{row.team}</td>
+                  <td className="px-3 py-2.5 text-[oklch(0.35_0.01_264)]">{row.division}</td>
+                  <td className="px-3 py-2.5 font-bold text-[oklch(0.48_0.22_25)]">{row.placement}</td>
+                  <td className="px-3 py-2.5 text-center text-[oklch(0.35_0.01_264)]">{row.field}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
+    case "priority_table":
+      return (
+        <div className="mb-6 overflow-x-auto">
+          <table className="w-full text-[12.5px] border-collapse">
+            <thead>
+              <tr className="bg-[oklch(0.48_0.22_25)] text-white">
+                <th className="text-center px-3 py-3 font-semibold tracking-wide w-16" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>PRIORITY</th>
+                <th className="text-left px-3 py-3 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>TEAM</th>
+                <th className="text-center px-3 py-3 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>WIN PTS</th>
+                <th className="text-center px-3 py-3 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>MAJOR W</th>
+                <th className="text-center px-3 py-3 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>REG W</th>
+                <th className="text-center px-3 py-3 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>AVG PLACEMENT %</th>
+                <th className="text-center px-3 py-3 font-semibold tracking-wide" style={{ fontFamily: "'Barlow Condensed', Arial, sans-serif" }}>AVG SCORE</th>
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row, i) => (
+                <tr key={i} className={i % 2 === 0 ? "bg-[oklch(0.97_0.002_264)]" : "bg-white"}>
+                  <td className="px-3 py-3 text-center">
+                    <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-[oklch(0.48_0.22_25)] text-white font-bold text-[13px]">{row.rank}</span>
+                  </td>
+                  <td className="px-3 py-3 font-bold text-[oklch(0.22_0.06_264)] text-[13px]">{row.team}</td>
+                  <td className="px-3 py-3 text-center font-bold text-[oklch(0.22_0.06_264)]">{row.win_pts}</td>
+                  <td className="px-3 py-3 text-center text-[oklch(0.35_0.01_264)]">{row.major_wins}</td>
+                  <td className="px-3 py-3 text-center text-[oklch(0.35_0.01_264)]">{row.regular_wins}</td>
+                  <td className="px-3 py-3 text-center text-[oklch(0.35_0.01_264)]">{row.avg_pct}</td>
+                  <td className="px-3 py-3 text-center text-[oklch(0.35_0.01_264)]">{row.avg_score}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      );
+
     default:
       return null;
   }
