@@ -1100,561 +1100,6 @@ Time off is not considered approved until it has passed through all three levels
   },
   {
     num: "13",
-    title: "SEASONAL BENCHMARKS",
-    sub: "Season Timeline, Performance Expectations & Accountability",
-    content: [
-      {
-        type: "italic_intro",
-        text: "In order for a coaching position at Cheer Florida to exist, the following benchmarks must be met each season. These milestones are not suggestions — they are the minimum performance standards expected of every team coach. Missing milestones without documented justification will result in a $50.00 deduction per occurrence.",
-      },
-      {
-        type: "link",
-        label: "View the Full Interactive Season Roadmap",
-        url: "https://cheerroadmap-h889m6ur.manus.space",
-      },
-      {
-        type: "section_label",
-        text: "13.1  SEASON BENCHMARK TIMELINE",
-      },
-      {
-        type: "bullet",
-        items: [
-          "EARLY SEASON — Skill Identification: All tumbling and stunt elements for the season must be identified. Coaches are not to settle for the bare minimum requirements of the scoresheet. Work toward maximization of the team's potential.",
-          "MID-SEASON — Routine Completion (Minus Pyramid): The full routine, excluding the pyramid, must be complete and running by the established mid-season checkpoint.",
-          "MID-SEASON WINDOW — Full-Out Through Pyramid: Teams must begin going full-out through the pyramid section during the mid-season window as outlined in the Season Roadmap.",
-          "LATE MID-SEASON — Pyramid Completion: The full pyramid must be complete and incorporated into the routine by the late mid-season checkpoint.",
-          "LATE MID-SEASON FORWARD — Full-Out Including Pyramid: Teams must begin going full-out including the pyramid from the late mid-season checkpoint forward.",
-          "PRE-COMPETITION SEASON — 100% Full-Outs: Teams must be going full-out no less than twice per practice from the pre-competition checkpoint through the end of the competitive season.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "13.2  ONGOING PERFORMANCE BENCHMARKS",
-      },
-      {
-        type: "body",
-        text: "In addition to the seasonal benchmarks above, the following ongoing benchmarks apply throughout the season:",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Measurable skill improvement must be demonstrated by your team throughout the year.",
-          "Reasonable end-of-year retention rate, which must not fall below 75%.",
-          "Consistent execution of all non-negotiable practice systems (H.I.I.T., stretch, tumbling drills, jump system).",
-          "Timely submission of all practice plans and EOD reports.",
-          "Active and professional parent communication.",
-          "Attendance at all staff meetings and program events.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "13.3  BENCHMARK ACCOUNTABILITY",
-      },
-      {
-        type: "body",
-        text: "Coaches who consistently miss benchmarks will be subject to a formal performance review. The All Star Director will meet with the coach to identify barriers, create an improvement plan, and establish a timeline for correction. Continued failure to meet benchmarks after a performance review may result in reassignment, suspension, or termination.",
-      },
-    ],
-  },
-  {
-    num: "14",
-    title: "INJURY REPORTING PROCEDURES",
-    sub: "Mandatory Reporting, Documentation & Follow-Up Protocol",
-    content: [
-      {
-        type: "italic_intro",
-        text: "All injuries, regardless of severity, must be reported and documented. Failure to report an injury is a serious violation of program policy and may expose both the coach and the program to significant liability.",
-      },
-      {
-        type: "section_label",
-        text: "14.1  IMMEDIATE RESPONSE PROTOCOL",
-      },
-      {
-        type: "steps",
-        items: [
-          {
-            title: "Stop Practice",
-            desc: "Immediately stop the activity and secure the area. Do not allow other athletes to continue in the immediate vicinity of the injured athlete.",
-          },
-          {
-            title: "Assess the Athlete",
-            desc: "Assess the athlete's condition. If there is any possibility of a serious injury (head, neck, spine, loss of consciousness), do not move the athlete — call 911 immediately.",
-          },
-          {
-            title: "Notify Parents/Guardians",
-            desc: "Contact the athlete's parent or guardian immediately. Do not minimize the injury or delay notification.",
-          },
-          {
-            title: "Notify the All Star Director",
-            desc: "Contact the All Star Director immediately following any injury, regardless of severity.",
-          },
-          {
-            title: "Complete the Injury Report Form",
-            desc: "Complete the official Cheer Florida Injury Report Form in full before the end of the practice session.",
-          },
-          {
-            title: "Document in EOD Report",
-            desc: "All injuries must be documented in the End of Day Report for that practice.",
-          },
-          {
-            title: "Follow Up",
-            desc: "Check in with the athlete and their family the following day. Document the follow-up in your next EOD report.",
-          },
-        ],
-      },
-      {
-        type: "section_label",
-        text: "14.2  CONCUSSION PROTOCOL",
-      },
-      {
-        type: "body",
-        text: "Any athlete who exhibits signs of a concussion must be immediately removed from participation. Signs include: headache, dizziness, confusion, nausea, sensitivity to light or noise, or any loss of consciousness. An athlete who has been removed for a suspected concussion may NOT return to participation without written medical clearance from a licensed healthcare provider.",
-      },
-      {
-        type: "section_label",
-        text: "14.3  INJURY REPORT FORM — REQUIRED INFORMATION",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Athlete's full name, age, and date of birth.",
-          "Date, time, and location of the injury.",
-          "Description of the activity being performed at the time of injury.",
-          "Detailed description of how the injury occurred.",
-          "Description of the injury (body part, nature of injury).",
-          "Names of all witnesses present.",
-          "Immediate actions taken by the coach.",
-          "Whether EMS was called and/or athlete was transported for medical care.",
-          "Parent/guardian notification — time and method of contact.",
-          "Coach signature and date.",
-        ],
-      },
-    ],
-  },
-  {
-    num: "15",
-    title: "CELL PHONE POLICY",
-    sub: "Usage Standards, Violations & Photography Guidelines",
-    content: [
-      {
-        type: "section_label",
-        text: "15.1  COACH CELL PHONE USAGE",
-      },
-      {
-        type: "body",
-        text: "Cell phones are a significant distraction in the coaching environment. The following policy applies to all coaches during practice sessions and program events:",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Cell phones must be put away during active coaching time. Coaches may not scroll social media, send personal texts, or make personal calls during practice.",
-          "Cell phones may be used for practice-related purposes only — playing music, accessing practice plans, or communicating with program leadership.",
-          "PENALTY: Cell phone misuse during practice = $5.00 per hour dock from pay.",
-          "Coaches who are found to be consistently distracted by cell phones will be subject to a formal performance review.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "15.2  ATHLETE CELL PHONE POLICY",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Athletes are not permitted to have cell phones on the practice floor during active practice time.",
-          "Cell phones must be stored in bags or designated areas during practice.",
-          "Coaches are responsible for enforcing the athlete cell phone policy consistently.",
-          "Exceptions may be made for medical necessity — coaches must be notified in advance.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "15.3  PHOTOGRAPHY & VIDEO STANDARDS",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Coaches may take photos and videos of athletes for coaching and program purposes only.",
-          "Photos and videos of minors may NOT be posted to personal social media accounts without written parental consent.",
-          "All program photography and video must be posted through official Cheer Florida channels only.",
-          "Coaches must never photograph or video athletes in changing areas, restrooms, or any private setting.",
-          "Any misuse of photography or video involving minors will result in immediate termination and may be reported to law enforcement.",
-        ],
-      },
-    ],
-  },
-  {
-    num: "16",
-    title: "SOCIAL MEDIA POLICY",
-    sub: "Standards, Posting Guidelines & Violations",
-    content: [
-      {
-        type: "section_label",
-        text: "16.1  GENERAL SOCIAL MEDIA STANDARDS",
-      },
-      {
-        type: "body",
-        text: "As a Cheer Florida coach, your social media presence is an extension of your professional identity. Everything you post publicly reflects on the program. The following standards apply to all personal and professional social media activity:",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Coaches must conduct themselves professionally on all social media platforms.",
-          "Negative comments about athletes, parents, other coaches, or competing programs are strictly prohibited.",
-          "Coaches may not post confidential program information, competition strategies, or internal communications.",
-          "Coaches may not post content that is discriminatory, harassing, sexually explicit, or otherwise inappropriate.",
-          "Coaches must not use social media to communicate privately with athletes under the age of 18.",
-          "Violations of the social media policy may result in disciplinary action up to and including termination.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "16.2  POSTING MINORS",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Written parental consent is required before posting any photo or video of a minor athlete on any platform.",
-          "Consent forms are available from the All Star Director and must be on file before any posting.",
-          "When in doubt, do not post. Always err on the side of caution when it comes to images of minors.",
-          "Tag restrictions: Do not tag minors in posts without explicit parental permission.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "16.3  PROGRAM SOCIAL MEDIA ASSIGNMENTS",
-      },
-      {
-        type: "body",
-        text: "Coaches may be assigned to contribute content to official Cheer Florida social media channels. When contributing to official channels, coaches must follow all program branding guidelines and obtain approval from leadership before posting.",
-      },
-    ],
-  },
-  {
-    num: "17",
-    title: "SEXUAL ABUSE & MISCONDUCT PREVENTION",
-    sub: "Zero Tolerance Policy, Mandatory Reporting & Safe Sport",
-    content: [
-      {
-        type: "section_label",
-        text: "17.1  ZERO TOLERANCE POLICY",
-      },
-      {
-        type: "body",
-        text: "Cheer Florida maintains a strict zero tolerance policy for any form of sexual abuse, sexual misconduct, or inappropriate physical contact involving athletes. This policy applies to all coaches, staff members, volunteers, and any adult in a position of authority within the program.",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Any form of sexual abuse, exploitation, or misconduct involving a minor is a criminal offense and will be reported to law enforcement immediately.",
-          "Inappropriate physical contact of any kind — including contact that may appear innocent — is prohibited.",
-          "Coaches must never be alone in a closed space with a single athlete.",
-          "Coaches must never transport an athlete alone in a vehicle without written parental consent and All-Star Director approval.",
-          "Any romantic or sexual relationship between a coach and an athlete is strictly prohibited, regardless of the athlete's age.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "17.2  MANDATORY REPORTING OBLIGATIONS",
-      },
-      {
-        type: "body",
-        text: "All Cheer Florida coaches are mandatory reporters. This means that if you have reasonable suspicion that a child is being abused — physically, sexually, emotionally, or through neglect — you are legally required to report it. This obligation exists regardless of who the alleged abuser is.",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Report immediately to the All-Star Director AND to the appropriate child protective services agency.",
-          "Do not investigate the allegation yourself — your role is to report, not investigate.",
-          "Do not confront the alleged abuser.",
-          "Do not promise confidentiality to the child — explain that you are required to report.",
-          "Document everything you observed or were told in writing.",
-          "Failure to report suspected child abuse is a criminal offense in the state of Florida.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "17.3  SAFE SPORT GUIDELINES",
-      },
-      {
-        type: "bullet",
-        items: [
-          "All coaches must complete Safe Sport training as required by program policy.",
-          "One-on-one interactions between coaches and athletes must occur in observable and interruptible settings.",
-          "Electronic communications with athletes must be transparent — parents should be copied on all direct communications with minor athletes.",
-          "Any coach who is the subject of a sexual misconduct allegation will be immediately suspended pending investigation.",
-          "Retaliation against anyone who reports suspected abuse or misconduct is strictly prohibited and will result in immediate termination.",
-        ],
-      },
-    ],
-  },
-  {
-    num: "18",
-    title: "SEXUAL HARASSMENT POLICY",
-    sub: "Definition, Prohibited Conduct & Reporting Procedure",
-    content: [
-      {
-        type: "section_label",
-        text: "18.1  POLICY STATEMENT",
-      },
-      {
-        type: "body",
-        text: "Cheer Florida is committed to providing a work and training environment free from sexual harassment. Sexual harassment in any form will not be tolerated and will result in disciplinary action up to and including immediate termination.",
-      },
-      {
-        type: "section_label",
-        text: "18.2  DEFINITION OF SEXUAL HARASSMENT",
-      },
-      {
-        type: "body",
-        text: "Sexual harassment includes any unwelcome sexual advances, requests for sexual favors, or other verbal, visual, or physical conduct of a sexual nature when:",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Submission to such conduct is made a condition of employment or participation.",
-          "Submission to or rejection of such conduct is used as the basis for decisions affecting employment or participation.",
-          "Such conduct has the purpose or effect of unreasonably interfering with an individual's work or participation, or creating an intimidating, hostile, or offensive environment.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "18.3  PROHIBITED CONDUCT",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Unwanted physical contact of a sexual nature.",
-          "Sexual comments, jokes, or innuendo.",
-          "Displaying sexually explicit materials.",
-          "Sending sexually explicit messages, emails, or social media communications.",
-          "Making sexual propositions or advances.",
-          "Commenting on an individual's body or appearance in a sexual manner.",
-          "Any other conduct of a sexual nature that creates a hostile or offensive environment.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "18.4  REPORTING PROCEDURE",
-      },
-      {
-        type: "steps",
-        items: [
-          {
-            title: "Report to the All Star Director",
-            desc: "Any coach who experiences or witnesses sexual harassment must report it to the All Star Director/Program Director/Owners immediately.",
-          },
-          {
-            title: "If the ASD is Involved",
-            desc: "If the All Star Director is the subject of the complaint, report directly to program ownership.",
-          },
-          {
-            title: "Written Documentation",
-            desc: "Provide a written account of the incident(s), including dates, times, locations, witnesses, and a description of what occurred.",
-          },
-          {
-            title: "Investigation",
-            desc: "All complaints will be investigated promptly and confidentially. Both parties will have the opportunity to present their account.",
-          },
-          {
-            title: "Resolution",
-            desc: "Appropriate disciplinary action will be taken based on the findings of the investigation. Retaliation against anyone who reports harassment is strictly prohibited.",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    num: "19",
-    title: "ANTI-DISCRIMINATION POLICY",
-    sub: "Equal Treatment, Protected Classes & Inclusion",
-    content: [
-      {
-        type: "section_label",
-        text: "19.1  NON-DISCRIMINATION STATEMENT",
-      },
-      {
-        type: "body",
-        text: "Cheer Florida is committed to providing equal opportunity and treatment for all coaches, staff, and athletes regardless of race, color, religion, national origin, sex, gender identity, sexual orientation, age, disability, or any other characteristic protected by applicable law.",
-      },
-      {
-        type: "section_label",
-        text: "19.2  PROHIBITED CONDUCT",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Discrimination in hiring, assignment, compensation, or termination based on any protected characteristic.",
-          "Harassment or hostile treatment based on any protected characteristic.",
-          "Making derogatory comments, jokes, or remarks about any protected group.",
-          "Treating athletes differently based on race, religion, gender, sexual orientation, or any other protected characteristic.",
-          "Retaliating against anyone who reports discrimination or participates in an investigation.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "19.3  INCLUSION COMMITMENT",
-      },
-      {
-        type: "body",
-        text: "Cheer Florida is committed to building an inclusive program where every athlete and coach feels valued, respected, and supported. Coaches are expected to actively model inclusive behavior and to address any discriminatory conduct they observe immediately.",
-      },
-    ],
-  },
-  {
-    num: "20",
-    title: "NON-DISCLOSURE & CONFIDENTIALITY",
-    sub: "Confidential Information, Obligations & Consequences",
-    content: [
-      {
-        type: "section_label",
-        text: "20.1  CONFIDENTIAL INFORMATION",
-      },
-      {
-        type: "body",
-        text: "During your employment with Cheer Florida, you will have access to confidential and proprietary information. This information must be protected and may not be disclosed to any third party without written authorization from program leadership.",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Athlete personal information, including names, addresses, medical information, and family details.",
-          "Program financial information, including compensation structures, tuition rates, and revenue data.",
-          "Competition strategies, choreography, and routine details.",
-          "Proprietary coaching systems, training methodologies, and program materials.",
-          "Internal communications, personnel matters, and disciplinary actions.",
-          "Any information designated as confidential by program leadership.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "20.2  CONFIDENTIALITY OBLIGATIONS",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Confidentiality obligations begin on your first day of employment and continue after your employment ends.",
-          "You may not use confidential information for personal gain or to benefit any competing program.",
-          "You may not share confidential information with former colleagues, competing programs, or any unauthorized party.",
-          "Violations of the confidentiality agreement may result in legal action under the Florida Uniform Trade Secrets Act.",
-        ],
-      },
-    ],
-  },
-  {
-    num: "21",
-    title: "PRIVATE LESSON POLICY",
-    sub: "Authorization, Rates, Scheduling & Eligibility",
-    content: [
-      {
-        type: "section_label",
-        text: "21.1  AUTHORIZATION REQUIREMENTS",
-      },
-      {
-        type: "body",
-        text: "Private lessons are a privilege, not a right, and must be authorized by program leadership before being offered or conducted. The following requirements apply to all private lesson activity:",
-      },
-      {
-        type: "bullet",
-        items: [
-        
-          "Coaches may only offer private lessons to athletes currently enrolled in the Cheer Florida program.",
-          "Private lessons must be conducted at a Cheer Florida facility during approved hours.",
-          "Coaches may not conduct private lessons at competing facilities or in private residences.",
-          "All private lesson fees must be processed through the official Cheer Florida payment system — no cash transactions.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "21.2  RATES & COMPENSATION",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Private lesson rates are set by program leadership and must be followed without exception.",
-          "Coaches may not set their own rates or offer discounts without written authorization.",
-          "Coach compensation for private lessons will be paid according to the schedule outlined in the position agreement.",
-          "All private lesson revenue must be reported and processed through program accounting.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "21.3  CONDUCT & VIOLATIONS",
-      },
-      {
-        type: "bullet",
-        items: [
-          "All Safe Sport and professional conduct standards apply during private lessons.",
-          "One-on-one private lessons with minor athletes must be conducted in observable settings with a parent or guardian present or in view.",
-          "Coaches may not use private lessons to recruit athletes to competing programs.",
-          "Unauthorized private lessons or violations of this policy will result in disciplinary action up to and including termination.",
-        ],
-      },
-    ],
-  },
-  {
-    num: "22",
-    title: "EMPLOYMENT TERMINATION",
-    sub: "Types of Termination, At-Will Employment & Return of Property",
-    content: [
-      {
-        type: "section_label",
-        text: "22.1  AT-WILL EMPLOYMENT",
-      },
-      {
-        type: "body",
-        text: "All Cheer Florida coaching positions are at-will employment. This means that either the coach or the program may terminate the employment relationship at any time, with or without cause, and with or without notice, subject to applicable law.",
-      },
-      {
-        type: "section_label",
-        text: "22.2  GROUNDS FOR IMMEDIATE TERMINATION",
-      },
-      {
-        type: "body",
-        text: "The following actions will result in immediate termination without warning or severance:",
-      },
-      {
-        type: "bullet",
-        items: [
-          "Any form of sexual abuse, misconduct, or inappropriate contact with a minor.",
-          "Failure to report suspected child abuse as required by mandatory reporting laws.",
-          "Theft, fraud, or misappropriation of program funds or property.",
-          "Physical assault or threatening behavior toward athletes, parents, or colleagues.",
-          "Violation of the confidentiality agreement resulting in material harm to the program.",
-          "Conduct that brings significant reputational harm to Cheer Florida.",
-          "Unauthorized private lessons or solicitation of athletes for competing programs.",
-          "Any criminal conviction that affects the coach's ability to work with minors.",
-        ],
-      },
-      {
-        type: "section_label",
-        text: "22.3  RETURN OF PROPERTY",
-      },
-      {
-        type: "body",
-        text: "Upon termination of employment for any reason, the coach must immediately return all Cheer Florida property, including but not limited to: program materials, uniforms, equipment, access credentials, and any confidential documents. Failure to return program property may result in legal action.",
-      },
-    ],
-  },
-  {
-    num: "23",
-    title: "ACKNOWLEDGMENT & SIGNATURE",
-    sub: "Staff Acknowledgment of Receipt and Understanding",
-    content: [
-      {
-        type: "body",
-        text: "By signing below, I acknowledge that I have received, read, and understood the Cheer Florida Staff Operations Manual. I agree to comply with all policies, procedures, and standards outlined in this manual. I understand that failure to comply with these standards may result in disciplinary action up to and including termination of employment.",
-      },
-      {
-        type: "body",
-        text: "I understand that this manual may be updated from time to time and that I am responsible for staying current with any updates communicated by program leadership.",
-      },
-      {
-        type: "body",
-        text: "I understand that this manual does not constitute a contract of employment and that my employment remains at-will.",
-      },
-    ],
-  },
-  {
-    num: "24",
     title: "CHOREOGRAPHER & MUSIC PRIORITY SYSTEM",
     sub: "Data-Driven Resource Allocation Based on Competitive Performance",
     content: [
@@ -1664,7 +1109,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "24.1  WHY THIS SYSTEM EXISTS",
+        text: "13.1  WHY THIS SYSTEM EXISTS",
       },
       {
         type: "body",
@@ -1676,7 +1121,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "24.2  HOW THE PRIORITY SCORE IS CALCULATED",
+        text: "13.2  HOW THE PRIORITY SCORE IS CALCULATED",
       },
       {
         type: "body",
@@ -1744,7 +1189,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "24.3  COMPETITION SCHEDULE & EVENT CLASSIFICATIONS",
+        text: "13.3  COMPETITION SCHEDULE & EVENT CLASSIFICATIONS",
       },
       {
         type: "bullet",
@@ -1758,7 +1203,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "24.4  2025–2026 SEASON COMPETITION DATA",
+        text: "13.4  2025–2026 SEASON COMPETITION DATA",
       },
       {
         type: "body",
@@ -1866,7 +1311,7 @@ Time off is not considered approved until it has passed through all three levels
       },
       {
         type: "section_label",
-        text: "24.5  2025–2026 PRIORITY RANKINGS",
+        text: "13.5  2025–2026 PRIORITY RANKINGS",
       },
       {
         type: "body",
@@ -1895,4 +1340,559 @@ Time off is not considered approved until it has passed through all three levels
       },
     ],
   },
+  {
+    num: "14",
+    title: "SEASONAL BENCHMARKS",
+    sub: "Season Timeline, Performance Expectations & Accountability",
+    content: [
+      {
+        type: "italic_intro",
+        text: "In order for a coaching position at Cheer Florida to exist, the following benchmarks must be met each season. These milestones are not suggestions — they are the minimum performance standards expected of every team coach. Missing milestones without documented justification will result in a $50.00 deduction per occurrence.",
+      },
+      {
+        type: "link",
+        label: "View the Full Interactive Season Roadmap",
+        url: "https://cheerroadmap-h889m6ur.manus.space",
+      },
+      {
+        type: "section_label",
+        text: "14.1  SEASON BENCHMARK TIMELINE",
+      },
+      {
+        type: "bullet",
+        items: [
+          "EARLY SEASON — Skill Identification: All tumbling and stunt elements for the season must be identified. Coaches are not to settle for the bare minimum requirements of the scoresheet. Work toward maximization of the team's potential.",
+          "MID-SEASON — Routine Completion (Minus Pyramid): The full routine, excluding the pyramid, must be complete and running by the established mid-season checkpoint.",
+          "MID-SEASON WINDOW — Full-Out Through Pyramid: Teams must begin going full-out through the pyramid section during the mid-season window as outlined in the Season Roadmap.",
+          "LATE MID-SEASON — Pyramid Completion: The full pyramid must be complete and incorporated into the routine by the late mid-season checkpoint.",
+          "LATE MID-SEASON FORWARD — Full-Out Including Pyramid: Teams must begin going full-out including the pyramid from the late mid-season checkpoint forward.",
+          "PRE-COMPETITION SEASON — 100% Full-Outs: Teams must be going full-out no less than twice per practice from the pre-competition checkpoint through the end of the competitive season.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "14.2  ONGOING PERFORMANCE BENCHMARKS",
+      },
+      {
+        type: "body",
+        text: "In addition to the seasonal benchmarks above, the following ongoing benchmarks apply throughout the season:",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Measurable skill improvement must be demonstrated by your team throughout the year.",
+          "Reasonable end-of-year retention rate, which must not fall below 75%.",
+          "Consistent execution of all non-negotiable practice systems (H.I.I.T., stretch, tumbling drills, jump system).",
+          "Timely submission of all practice plans and EOD reports.",
+          "Active and professional parent communication.",
+          "Attendance at all staff meetings and program events.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "14.3  BENCHMARK ACCOUNTABILITY",
+      },
+      {
+        type: "body",
+        text: "Coaches who consistently miss benchmarks will be subject to a formal performance review. The All Star Director will meet with the coach to identify barriers, create an improvement plan, and establish a timeline for correction. Continued failure to meet benchmarks after a performance review may result in reassignment, suspension, or termination.",
+      },
+    ],
+  },
+  {
+    num: "15",
+    title: "INJURY REPORTING PROCEDURES",
+    sub: "Mandatory Reporting, Documentation & Follow-Up Protocol",
+    content: [
+      {
+        type: "italic_intro",
+        text: "All injuries, regardless of severity, must be reported and documented. Failure to report an injury is a serious violation of program policy and may expose both the coach and the program to significant liability.",
+      },
+      {
+        type: "section_label",
+        text: "14.1  IMMEDIATE RESPONSE PROTOCOL",
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            title: "Stop Practice",
+            desc: "Immediately stop the activity and secure the area. Do not allow other athletes to continue in the immediate vicinity of the injured athlete.",
+          },
+          {
+            title: "Assess the Athlete",
+            desc: "Assess the athlete's condition. If there is any possibility of a serious injury (head, neck, spine, loss of consciousness), do not move the athlete — call 911 immediately.",
+          },
+          {
+            title: "Notify Parents/Guardians",
+            desc: "Contact the athlete's parent or guardian immediately. Do not minimize the injury or delay notification.",
+          },
+          {
+            title: "Notify the All Star Director",
+            desc: "Contact the All Star Director immediately following any injury, regardless of severity.",
+          },
+          {
+            title: "Complete the Injury Report Form",
+            desc: "Complete the official Cheer Florida Injury Report Form in full before the end of the practice session.",
+          },
+          {
+            title: "Document in EOD Report",
+            desc: "All injuries must be documented in the End of Day Report for that practice.",
+          },
+          {
+            title: "Follow Up",
+            desc: "Check in with the athlete and their family the following day. Document the follow-up in your next EOD report.",
+          },
+        ],
+      },
+      {
+        type: "section_label",
+        text: "14.2  CONCUSSION PROTOCOL",
+      },
+      {
+        type: "body",
+        text: "Any athlete who exhibits signs of a concussion must be immediately removed from participation. Signs include: headache, dizziness, confusion, nausea, sensitivity to light or noise, or any loss of consciousness. An athlete who has been removed for a suspected concussion may NOT return to participation without written medical clearance from a licensed healthcare provider.",
+      },
+      {
+        type: "section_label",
+        text: "14.3  INJURY REPORT FORM — REQUIRED INFORMATION",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Athlete's full name, age, and date of birth.",
+          "Date, time, and location of the injury.",
+          "Description of the activity being performed at the time of injury.",
+          "Detailed description of how the injury occurred.",
+          "Description of the injury (body part, nature of injury).",
+          "Names of all witnesses present.",
+          "Immediate actions taken by the coach.",
+          "Whether EMS was called and/or athlete was transported for medical care.",
+          "Parent/guardian notification — time and method of contact.",
+          "Coach signature and date.",
+        ],
+      },
+    ],
+  },
+  {
+    num: "16",
+    title: "CELL PHONE POLICY",
+    sub: "Usage Standards, Violations & Photography Guidelines",
+    content: [
+      {
+        type: "section_label",
+        text: "15.1  COACH CELL PHONE USAGE",
+      },
+      {
+        type: "body",
+        text: "Cell phones are a significant distraction in the coaching environment. The following policy applies to all coaches during practice sessions and program events:",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Cell phones must be put away during active coaching time. Coaches may not scroll social media, send personal texts, or make personal calls during practice.",
+          "Cell phones may be used for practice-related purposes only — playing music, accessing practice plans, or communicating with program leadership.",
+          "PENALTY: Cell phone misuse during practice = $5.00 per hour dock from pay.",
+          "Coaches who are found to be consistently distracted by cell phones will be subject to a formal performance review.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "15.2  ATHLETE CELL PHONE POLICY",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Athletes are not permitted to have cell phones on the practice floor during active practice time.",
+          "Cell phones must be stored in bags or designated areas during practice.",
+          "Coaches are responsible for enforcing the athlete cell phone policy consistently.",
+          "Exceptions may be made for medical necessity — coaches must be notified in advance.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "15.3  PHOTOGRAPHY & VIDEO STANDARDS",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Coaches may take photos and videos of athletes for coaching and program purposes only.",
+          "Photos and videos of minors may NOT be posted to personal social media accounts without written parental consent.",
+          "All program photography and video must be posted through official Cheer Florida channels only.",
+          "Coaches must never photograph or video athletes in changing areas, restrooms, or any private setting.",
+          "Any misuse of photography or video involving minors will result in immediate termination and may be reported to law enforcement.",
+        ],
+      },
+    ],
+  },
+  {
+    num: "17",
+    title: "SOCIAL MEDIA POLICY",
+    sub: "Standards, Posting Guidelines & Violations",
+    content: [
+      {
+        type: "section_label",
+        text: "16.1  GENERAL SOCIAL MEDIA STANDARDS",
+      },
+      {
+        type: "body",
+        text: "As a Cheer Florida coach, your social media presence is an extension of your professional identity. Everything you post publicly reflects on the program. The following standards apply to all personal and professional social media activity:",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Coaches must conduct themselves professionally on all social media platforms.",
+          "Negative comments about athletes, parents, other coaches, or competing programs are strictly prohibited.",
+          "Coaches may not post confidential program information, competition strategies, or internal communications.",
+          "Coaches may not post content that is discriminatory, harassing, sexually explicit, or otherwise inappropriate.",
+          "Coaches must not use social media to communicate privately with athletes under the age of 18.",
+          "Violations of the social media policy may result in disciplinary action up to and including termination.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "16.2  POSTING MINORS",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Written parental consent is required before posting any photo or video of a minor athlete on any platform.",
+          "Consent forms are available from the All Star Director and must be on file before any posting.",
+          "When in doubt, do not post. Always err on the side of caution when it comes to images of minors.",
+          "Tag restrictions: Do not tag minors in posts without explicit parental permission.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "16.3  PROGRAM SOCIAL MEDIA ASSIGNMENTS",
+      },
+      {
+        type: "body",
+        text: "Coaches may be assigned to contribute content to official Cheer Florida social media channels. When contributing to official channels, coaches must follow all program branding guidelines and obtain approval from leadership before posting.",
+      },
+    ],
+  },
+  {
+    num: "18",
+    title: "SEXUAL ABUSE & MISCONDUCT PREVENTION",
+    sub: "Zero Tolerance Policy, Mandatory Reporting & Safe Sport",
+    content: [
+      {
+        type: "section_label",
+        text: "17.1  ZERO TOLERANCE POLICY",
+      },
+      {
+        type: "body",
+        text: "Cheer Florida maintains a strict zero tolerance policy for any form of sexual abuse, sexual misconduct, or inappropriate physical contact involving athletes. This policy applies to all coaches, staff members, volunteers, and any adult in a position of authority within the program.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Any form of sexual abuse, exploitation, or misconduct involving a minor is a criminal offense and will be reported to law enforcement immediately.",
+          "Inappropriate physical contact of any kind — including contact that may appear innocent — is prohibited.",
+          "Coaches must never be alone in a closed space with a single athlete.",
+          "Coaches must never transport an athlete alone in a vehicle without written parental consent and All-Star Director approval.",
+          "Any romantic or sexual relationship between a coach and an athlete is strictly prohibited, regardless of the athlete's age.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "17.2  MANDATORY REPORTING OBLIGATIONS",
+      },
+      {
+        type: "body",
+        text: "All Cheer Florida coaches are mandatory reporters. This means that if you have reasonable suspicion that a child is being abused — physically, sexually, emotionally, or through neglect — you are legally required to report it. This obligation exists regardless of who the alleged abuser is.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Report immediately to the All-Star Director AND to the appropriate child protective services agency.",
+          "Do not investigate the allegation yourself — your role is to report, not investigate.",
+          "Do not confront the alleged abuser.",
+          "Do not promise confidentiality to the child — explain that you are required to report.",
+          "Document everything you observed or were told in writing.",
+          "Failure to report suspected child abuse is a criminal offense in the state of Florida.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "17.3  SAFE SPORT GUIDELINES",
+      },
+      {
+        type: "bullet",
+        items: [
+          "All coaches must complete Safe Sport training as required by program policy.",
+          "One-on-one interactions between coaches and athletes must occur in observable and interruptible settings.",
+          "Electronic communications with athletes must be transparent — parents should be copied on all direct communications with minor athletes.",
+          "Any coach who is the subject of a sexual misconduct allegation will be immediately suspended pending investigation.",
+          "Retaliation against anyone who reports suspected abuse or misconduct is strictly prohibited and will result in immediate termination.",
+        ],
+      },
+    ],
+  },
+  {
+    num: "19",
+    title: "SEXUAL HARASSMENT POLICY",
+    sub: "Definition, Prohibited Conduct & Reporting Procedure",
+    content: [
+      {
+        type: "section_label",
+        text: "18.1  POLICY STATEMENT",
+      },
+      {
+        type: "body",
+        text: "Cheer Florida is committed to providing a work and training environment free from sexual harassment. Sexual harassment in any form will not be tolerated and will result in disciplinary action up to and including immediate termination.",
+      },
+      {
+        type: "section_label",
+        text: "18.2  DEFINITION OF SEXUAL HARASSMENT",
+      },
+      {
+        type: "body",
+        text: "Sexual harassment includes any unwelcome sexual advances, requests for sexual favors, or other verbal, visual, or physical conduct of a sexual nature when:",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Submission to such conduct is made a condition of employment or participation.",
+          "Submission to or rejection of such conduct is used as the basis for decisions affecting employment or participation.",
+          "Such conduct has the purpose or effect of unreasonably interfering with an individual's work or participation, or creating an intimidating, hostile, or offensive environment.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "18.3  PROHIBITED CONDUCT",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Unwanted physical contact of a sexual nature.",
+          "Sexual comments, jokes, or innuendo.",
+          "Displaying sexually explicit materials.",
+          "Sending sexually explicit messages, emails, or social media communications.",
+          "Making sexual propositions or advances.",
+          "Commenting on an individual's body or appearance in a sexual manner.",
+          "Any other conduct of a sexual nature that creates a hostile or offensive environment.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "18.4  REPORTING PROCEDURE",
+      },
+      {
+        type: "steps",
+        items: [
+          {
+            title: "Report to the All Star Director",
+            desc: "Any coach who experiences or witnesses sexual harassment must report it to the All Star Director/Program Director/Owners immediately.",
+          },
+          {
+            title: "If the ASD is Involved",
+            desc: "If the All Star Director is the subject of the complaint, report directly to program ownership.",
+          },
+          {
+            title: "Written Documentation",
+            desc: "Provide a written account of the incident(s), including dates, times, locations, witnesses, and a description of what occurred.",
+          },
+          {
+            title: "Investigation",
+            desc: "All complaints will be investigated promptly and confidentially. Both parties will have the opportunity to present their account.",
+          },
+          {
+            title: "Resolution",
+            desc: "Appropriate disciplinary action will be taken based on the findings of the investigation. Retaliation against anyone who reports harassment is strictly prohibited.",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    num: "20",
+    title: "ANTI-DISCRIMINATION POLICY",
+    sub: "Equal Treatment, Protected Classes & Inclusion",
+    content: [
+      {
+        type: "section_label",
+        text: "19.1  NON-DISCRIMINATION STATEMENT",
+      },
+      {
+        type: "body",
+        text: "Cheer Florida is committed to providing equal opportunity and treatment for all coaches, staff, and athletes regardless of race, color, religion, national origin, sex, gender identity, sexual orientation, age, disability, or any other characteristic protected by applicable law.",
+      },
+      {
+        type: "section_label",
+        text: "19.2  PROHIBITED CONDUCT",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Discrimination in hiring, assignment, compensation, or termination based on any protected characteristic.",
+          "Harassment or hostile treatment based on any protected characteristic.",
+          "Making derogatory comments, jokes, or remarks about any protected group.",
+          "Treating athletes differently based on race, religion, gender, sexual orientation, or any other protected characteristic.",
+          "Retaliating against anyone who reports discrimination or participates in an investigation.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "19.3  INCLUSION COMMITMENT",
+      },
+      {
+        type: "body",
+        text: "Cheer Florida is committed to building an inclusive program where every athlete and coach feels valued, respected, and supported. Coaches are expected to actively model inclusive behavior and to address any discriminatory conduct they observe immediately.",
+      },
+    ],
+  },
+  {
+    num: "21",
+    title: "NON-DISCLOSURE & CONFIDENTIALITY",
+    sub: "Confidential Information, Obligations & Consequences",
+    content: [
+      {
+        type: "section_label",
+        text: "20.1  CONFIDENTIAL INFORMATION",
+      },
+      {
+        type: "body",
+        text: "During your employment with Cheer Florida, you will have access to confidential and proprietary information. This information must be protected and may not be disclosed to any third party without written authorization from program leadership.",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Athlete personal information, including names, addresses, medical information, and family details.",
+          "Program financial information, including compensation structures, tuition rates, and revenue data.",
+          "Competition strategies, choreography, and routine details.",
+          "Proprietary coaching systems, training methodologies, and program materials.",
+          "Internal communications, personnel matters, and disciplinary actions.",
+          "Any information designated as confidential by program leadership.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "20.2  CONFIDENTIALITY OBLIGATIONS",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Confidentiality obligations begin on your first day of employment and continue after your employment ends.",
+          "You may not use confidential information for personal gain or to benefit any competing program.",
+          "You may not share confidential information with former colleagues, competing programs, or any unauthorized party.",
+          "Violations of the confidentiality agreement may result in legal action under the Florida Uniform Trade Secrets Act.",
+        ],
+      },
+    ],
+  },
+  {
+    num: "22",
+    title: "PRIVATE LESSON POLICY",
+    sub: "Authorization, Rates, Scheduling & Eligibility",
+    content: [
+      {
+        type: "section_label",
+        text: "21.1  AUTHORIZATION REQUIREMENTS",
+      },
+      {
+        type: "body",
+        text: "Private lessons are a privilege, not a right, and must be authorized by program leadership before being offered or conducted. The following requirements apply to all private lesson activity:",
+      },
+      {
+        type: "bullet",
+        items: [
+        
+          "Coaches may only offer private lessons to athletes currently enrolled in the Cheer Florida program.",
+          "Private lessons must be conducted at a Cheer Florida facility during approved hours.",
+          "Coaches may not conduct private lessons at competing facilities or in private residences.",
+          "All private lesson fees must be processed through the official Cheer Florida payment system — no cash transactions.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "21.2  RATES & COMPENSATION",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Private lesson rates are set by program leadership and must be followed without exception.",
+          "Coaches may not set their own rates or offer discounts without written authorization.",
+          "Coach compensation for private lessons will be paid according to the schedule outlined in the position agreement.",
+          "All private lesson revenue must be reported and processed through program accounting.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "21.3  CONDUCT & VIOLATIONS",
+      },
+      {
+        type: "bullet",
+        items: [
+          "All Safe Sport and professional conduct standards apply during private lessons.",
+          "One-on-one private lessons with minor athletes must be conducted in observable settings with a parent or guardian present or in view.",
+          "Coaches may not use private lessons to recruit athletes to competing programs.",
+          "Unauthorized private lessons or violations of this policy will result in disciplinary action up to and including termination.",
+        ],
+      },
+    ],
+  },
+  {
+    num: "23",
+    title: "EMPLOYMENT TERMINATION",
+    sub: "Types of Termination, At-Will Employment & Return of Property",
+    content: [
+      {
+        type: "section_label",
+        text: "22.1  AT-WILL EMPLOYMENT",
+      },
+      {
+        type: "body",
+        text: "All Cheer Florida coaching positions are at-will employment. This means that either the coach or the program may terminate the employment relationship at any time, with or without cause, and with or without notice, subject to applicable law.",
+      },
+      {
+        type: "section_label",
+        text: "22.2  GROUNDS FOR IMMEDIATE TERMINATION",
+      },
+      {
+        type: "body",
+        text: "The following actions will result in immediate termination without warning or severance:",
+      },
+      {
+        type: "bullet",
+        items: [
+          "Any form of sexual abuse, misconduct, or inappropriate contact with a minor.",
+          "Failure to report suspected child abuse as required by mandatory reporting laws.",
+          "Theft, fraud, or misappropriation of program funds or property.",
+          "Physical assault or threatening behavior toward athletes, parents, or colleagues.",
+          "Violation of the confidentiality agreement resulting in material harm to the program.",
+          "Conduct that brings significant reputational harm to Cheer Florida.",
+          "Unauthorized private lessons or solicitation of athletes for competing programs.",
+          "Any criminal conviction that affects the coach's ability to work with minors.",
+        ],
+      },
+      {
+        type: "section_label",
+        text: "22.3  RETURN OF PROPERTY",
+      },
+      {
+        type: "body",
+        text: "Upon termination of employment for any reason, the coach must immediately return all Cheer Florida property, including but not limited to: program materials, uniforms, equipment, access credentials, and any confidential documents. Failure to return program property may result in legal action.",
+      },
+    ],
+  },
+  {
+    num: "24",
+    title: "ACKNOWLEDGMENT & SIGNATURE",
+    sub: "Staff Acknowledgment of Receipt and Understanding",
+    content: [
+      {
+        type: "body",
+        text: "By signing below, I acknowledge that I have received, read, and understood the Cheer Florida Staff Operations Manual. I agree to comply with all policies, procedures, and standards outlined in this manual. I understand that failure to comply with these standards may result in disciplinary action up to and including termination of employment.",
+      },
+      {
+        type: "body",
+        text: "I understand that this manual may be updated from time to time and that I am responsible for staying current with any updates communicated by program leadership.",
+      },
+      {
+        type: "body",
+        text: "I understand that this manual does not constitute a contract of employment and that my employment remains at-will.",
+      },
+    ],
+  }
 ];
